@@ -4,7 +4,7 @@
     src: url(/fonts/cdb.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'mckb';
     src: url(/fonts/mckb.ttf);
 }
@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'fsh55';
     src: url(/fonts/fsh55.ttf);
-}
+} */
 @font-face {
     font-family: 'hytmr';
     src: url(/fonts/hytmr.ttf);
