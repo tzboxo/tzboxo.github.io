@@ -40,10 +40,7 @@
 }
 
 /* 导航栏居中 结束 */
-/* link page */
 
-
-/* end link */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -1422,6 +1419,7 @@ body {
 }
 *::-webkit-scrollbar-thumb {
   background: var(--scrollbar-color);
+  border-radius: 8px;
 }
 *::-webkit-scrollbar-track {
   background-color: transparent;
@@ -2174,8 +2172,8 @@ figure.highlight pre .javascript .function {
   -webkit-align-self: flex-start;
   align-self: flex-start;
   -ms-flex-item-align: start;
-  padding: 1em;
-  background: none;
+  padding: 2em;
+  background: var(--card-bg);
 }
 @media screen and (max-width: 768px) {
   .layout > div:first-child:not(.recent-posts) {
@@ -2221,18 +2219,20 @@ figure.highlight pre .javascript .function {
 .flink#article-container {
   margin-bottom: 20px;
 }
+#page {
+  background: var(--body-bg);
+}
 .flink h2 {
   margin: 0;
   line: height 2em;
 }
 .flink-desc {
-  margin: 0 0 20px 0;
+  margin: 0 0 2em 0;
   line-height: 20px;
 }
 .flink-list {
   overflow: auto;
   text-align: left;
-  background: #008000;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -2256,8 +2256,8 @@ figure.highlight pre .javascript .function {
   position: relative;
   float: left;
   overflow: hidden;
-  margin-bottom: 10px;
-  width: calc(100% / 4 - 10px);
+  margin-bottom: 20px;
+  width: calc(100% / 4 - 20px);
   height: 90px;
   border-radius: 12px;
   line-height: 17px;
@@ -2266,14 +2266,14 @@ figure.highlight pre .javascript .function {
 }
 @media screen and (max-width: 1024px) {
   .flink-list > .flink-list-item {
-    -webkit-box-flex: calc(50% - 10px);
-    -moz-box-flex: calc(50% - 10px);
-    -o-box-flex: calc(50% - 10px);
-    box-flex: calc(50% - 10px);
-    -webkit-flex: calc(50% - 10px);
-    -ms-flex: calc(50% - 10px);
-    flex: calc(50% - 10px);
-    max-width: calc(50% - 10px);
+    -webkit-box-flex: calc(50% - 20px);
+    -moz-box-flex: calc(50% - 20px);
+    -o-box-flex: calc(50% - 20px);
+    box-flex: calc(50% - 20px);
+    -webkit-flex: calc(50% - 20px);
+    -ms-flex: calc(50% - 20px);
+    flex: calc(50% - 20px);
+    max-width: calc(50% - 20px);
   }
 }
 @media screen and (max-width: 600px) {
