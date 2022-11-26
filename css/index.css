@@ -39,8 +39,12 @@
     cursor: pointer;
 }
 
-/* 导航栏居中 结束 */
-
+/* 分页器底部居中 */
+#pagination {
+    overflow: hidden;
+    margin-top: 1rem;
+    width: 100%;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
