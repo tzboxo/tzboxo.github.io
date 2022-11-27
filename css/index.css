@@ -3,16 +3,6 @@
     font-family: 'cdb';
     src: url(/fonts/cdb.ttf);
 }
-
-/* @font-face {
-    font-family: 'mckb';
-    src: url(/fonts/mckb.ttf);
-}
-
-@font-face {
-    font-family: 'fsh55';
-    src: url(/fonts/fsh55.ttf);
-} */
 @font-face {
     font-family: 'hytmr';
     src: url(/fonts/hytmr.woff);
@@ -64,6 +54,10 @@
   改为：*/
   left:50%;
   translate:-50%;
+}
+.icon-zuijingengxin:before, .item-headline .icon-biaoqian:before, .icon-wangzhantongji:before,
+.icon-tongzhi:before, .icon-pinglun:before {
+    font-size: 24px;
 }
 /* 背景宇宙星光  */
 #universe{
@@ -2472,7 +2466,8 @@ figure.highlight pre .javascript .function {
 #recent-posts > .recent-post-item .post_cover {
   overflow: hidden;
   width: 44%;
-  height: 100%;
+  height: auto !important;
+  aspect-ratio: 2.35/1 !important;
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item .post_cover {
@@ -2537,11 +2532,14 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   margin: 6px 0;
-  color: rgba(24,25,31,0.4);
   font-size: 90%;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
   cursor: default;
+  color: var(--font-color);
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .sticky {
   color: #ff6612;
@@ -2565,7 +2563,10 @@ figure.highlight pre .javascript .function {
   display: none;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
-  color: rgba(24,25,31,0.4);
+  color: var(--font-color);
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
   color: #00c6ae;
@@ -2767,7 +2768,10 @@ h1.page-title + .tag-cloud-list {
 #aside-content .aside-list > .aside-list-item .content > time,
 #aside-content .aside-list > .aside-list-item .content > .name {
   display: block;
-  color: rgba(24,25,31,0.4);
+  color: var(--font-color);
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
   font-size: 85%;
 }
 #aside-content .aside-list > .aside-list-item .content > .title,
@@ -2994,7 +2998,7 @@ h1.page-title + .tag-cloud-list {
   animation: more-btn-move 1s infinite;
 }
 #aside-content .card-announcement .item-headline i {
-  color: #f00;
+  color: var(--font-color);
 }
 .avatar-img {
   overflow: hidden;
@@ -5488,7 +5492,7 @@ blockquote.pullquote.right {
 }
 [data-theme='dark'] {
   --global-bg: #0d0d0d;
-  --font-color: rgba(255,255,255,0.7);
+  --font-color: rgba(255,255,255,0.6);
   --hr-border: rgba(255,255,255,0.4);
   --hr-before-color: rgba(255,255,255,0.7);
   --search-bg: #121212;
