@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (isHighlightCopy) {
-      highlightCopyEle = '<div class="copy-notice"></div><i class="fas fa-paste copy-button"></i>'
+      highlightCopyEle = '<div class="copy-notice"></div><i class="iconfont icon-fuzhi copy-button"></i>'
     }
 
     const copy = (text, ctx) => {
