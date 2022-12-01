@@ -1,3 +1,37 @@
+#recent-posts {
+    margin-top: -1rem;
+    /*头部为空时抵消间隔，若有磁贴或日历请注释掉该行*/
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    /*规定灵活的项目在必要的时候拆行或拆列。*/
+    justify-content: space-between;
+    /*。*/
+}
+
+#recent-posts>.recent-post-item {
+    margin-top: 1rem;
+    /*最小间距*/
+    display: block !important;
+    height: auto;
+    /*高度自动*/
+    width: 49%;
+    /*文章容器容器宽度*/
+}
+
+#pagination {
+    margin: 0 auto;
+}
+
+#pagination a {
+    color: var(--font-color);
+}
+
+@media screen and (max-width: 640px) {
+    #recent-posts > .recent-post-item {
+     width:100%;/*控制手机自适应*/
+    }
+}
 /* 全局字体设置 */
 /* @font-face {
     font-family: 'cdb';
@@ -41,13 +75,6 @@ img {
 .site-page i {
     font-size: 1em;
     /*导航图标大小*/
-}
-
-/* 分页器底部居中 */
-#pagination {
-    overflow: hidden;
-    margin-top: 1rem;
-    width: 100%;
 }
 
 /* 取消导航 Hover 下划线 */
@@ -2501,7 +2528,6 @@ figure.highlight pre .javascript .function {
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-  height: 18em;
   border-radius: 16px;
 }
 @media screen and (max-width: 768px) {
@@ -2531,7 +2557,7 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item .post_cover {
   overflow: hidden;
-  width: 44%;
+  width: 100%;
   height: auto !important;
   aspect-ratio: 2.35/1 !important;
 }
@@ -2560,8 +2586,7 @@ figure.highlight pre .javascript .function {
   }
 }
 #recent-posts > .recent-post-item >.recent-post-info {
-  padding: 0 1.5em;
-  width: 57%;
+  padding: 1.25em;
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item >.recent-post-info {
@@ -2597,8 +2622,8 @@ figure.highlight pre .javascript .function {
   color: #00c6ae;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
-  margin: 6px 0;
-  font-size: 90%;
+  margin-bottom: 0.5em;
+  font-size: 0.875em;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
   cursor: default;
@@ -2640,6 +2665,9 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item >.recent-post-info > .content {
   -webkit-line-clamp: 2;
+  line-height: 1.375em;
+  color: var(--font-color);
+  font-size: 0.875em;
 }
 .tag-cloud-list a {
   display: inline-block;
