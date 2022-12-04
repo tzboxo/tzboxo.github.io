@@ -222,7 +222,7 @@ const btf = {
     if (service === 'mediumZoom') {
       const zoom = mediumZoom(ele)
       zoom.on('open', e => {
-        const photoBg = document.documentElement.getAttribute('data-theme') === 'dark' ? '#121212' : '#fff'
+        const photoBg = document.documentElement.getAttribute('data-theme') === 'dark' ? '#1e1e1e' : '#fff'
         zoom.update({
           background: photoBg
         })
