@@ -15,7 +15,7 @@
     display: block !important;
     height: auto;
     /*高度自动*/
-    width: 49%;
+    width: calc(50% - 8px);
     /*文章容器容器宽度*/
 }
 
@@ -4013,6 +4013,7 @@ h1.page-title + .tag-cloud-list {
 }
 #article-container p {
   margin: 0 0 16px;
+  line-height: 1.5em;
 }
 #article-container iframe {
   margin: 0 0 20px;
@@ -4059,7 +4060,7 @@ h1.page-title + .tag-cloud-list {
 }
 #post .tag_share .post-meta__tags {
   display: inline-block;
-  margin: 8px 8px 8px 0;
+  margin: 2em 8px 8px 0;
   padding: 0 12px;
   width: fit-content;
   border: 1px solid #00c6ae;
@@ -5230,7 +5231,7 @@ blockquote.pullquote.right {
 }
 .note.info.modern {
   border-color: #18191f;
-  background: #c4e7e4;
+  background: #afe9e2;
   color: #18191f;
 }
 .note.info.modern a:not(.btn) {
