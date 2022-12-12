@@ -109,6 +109,11 @@ img {
 .post-meta-date .icon-zuijingengxin:before {
     font-size: 1em;
 }
+
+.article-meta .icon-pinglun:before {
+    font-size: 1em;
+}
+
 /* 背景宇宙星光  */
 #universe{
     display: block;
