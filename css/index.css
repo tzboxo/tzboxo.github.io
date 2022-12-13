@@ -2358,7 +2358,7 @@ figure.highlight pre .javascript .function {
   background: var(--card-bg);
 }
 .flink h2 {
-  margin: 0;
+  margin-top: 32px;
   line: height 2em;
 }
 .flink-desc {
@@ -2512,6 +2512,9 @@ figure.highlight pre .javascript .function {
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 1.5em;
+}
+h2:first-child {
+  margin-top: 0;
 }
 #recent-posts > .recent-post-item:not(:first-child) {
   margin-top: 1em;
