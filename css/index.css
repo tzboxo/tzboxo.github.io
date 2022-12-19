@@ -113,7 +113,9 @@ img {
 .article-meta .icon-pinglun:before {
     font-size: 1em;
 }
-
+.card-tag-cloud {
+    line-height: 1.5;
+}
 /* 背景宇宙星光  */
 #universe{
     display: block;
@@ -4021,7 +4023,6 @@ h1.page-title + .tag-cloud-list {
 }
 #article-container p {
   margin: 0 0 16px;
-  line-height: 1.5em;
 }
 #article-container iframe {
   margin: 0 0 20px;
