@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>AE动效周期表（上） | XIAOO</title><meta name="author" content="XIAOO"><meta name="copyright" content="XIAOO"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="1. 轨道旋转(在轨道上旋转对象的运动)原理: 移动锚点属性使物体与锚点产生距离，为旋转属性添加关键帧或表达式。 步骤: 新建合成，绘制一个圆形，取消填充，保留描边，可将图层命名为圆轨道，其次绘制一个小圆形，保留填充，取消描边，将小圆与圆轨道呈同心圆的状态，中心点一致，然后修改小圆的锚点，使小圆圆心在圆轨道上边缘点的中心上（为保证中心点一致，此处不要移动位置而是修改锚点，因为旋转是以中心点的位置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AE动效周期表（上）">
+<meta property="og:url" content="http://taozeng.xyz/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/index.html">
+<meta property="og:site_name" content="XIAOO">
+<meta property="og:description" content="1. 轨道旋转(在轨道上旋转对象的运动)原理: 移动锚点属性使物体与锚点产生距离，为旋转属性添加关键帧或表达式。 步骤: 新建合成，绘制一个圆形，取消填充，保留描边，可将图层命名为圆轨道，其次绘制一个小圆形，保留填充，取消描边，将小圆与圆轨道呈同心圆的状态，中心点一致，然后修改小圆的锚点，使小圆圆心在圆轨道上边缘点的中心上（为保证中心点一致，此处不要移动位置而是修改锚点，因为旋转是以中心点的位置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-1.gif">
+<meta property="article:published_time" content="2022-12-21T07:30:13.000Z">
+<meta property="article:modified_time" content="2022-12-22T03:03:20.000Z">
+<meta property="article:author" content="XIAOO">
+<meta property="article:tag" content="AE">
+<meta property="article:tag" content="动效">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-1.gif"><link rel="shortcut icon" href="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/logo.svg"><link rel="canonical" href="http://taozeng.xyz/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'AE动效周期表（上）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-22 11:03:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/content.css"><link rel="stylesheet" href="/custom.css"><link rel="stylesheet" href="//at.alicdn.com/t/c/font_3603594_b76nkygxl97.css"><link rel="stylesheet" href="/css/universe.css"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/logo.svg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 碎碎念</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-youlian"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://taozeng.webflow.io/"><i class="fa-fw iconfont icon-zishu"></i><span> 自述</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-zuopinfupan"></i><span> 文章</span><i class="iconfont icon-xiajian"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-wenjianjia"></i><span> 归档</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-1.gif')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">XIAOO</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-shouye"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 碎碎念</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw iconfont icon-youlian"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://taozeng.webflow.io/"><i class="fa-fw iconfont icon-zishu"></i><span> 自述</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw iconfont icon-zuopinfupan"></i><span> 文章</span><i class="iconfont icon-xiajian"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tags/"><i class="fa-fw iconfont icon-biaoqian"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw iconfont icon-fenlei"></i><span> 分类</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw iconfont icon-wenjianjia"></i><span> 归档</span></a></li></ul></div></div></div><div id="navFn"><div id="search-button"><a class="site-page social-icon search"><i class="iconfont icon-sousuo"></i><span> 搜索</span></a></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">AE动效周期表（上）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="iconfont icon-riqi fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-21T07:30:13.000Z" title="发表于 2022-12-21 15:30:13">2022-12-21</time><span class="post-meta-separator">|</span><i class="iconfont icon-zuijingengxin fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-22T03:03:20.000Z" title="更新于 2022-12-22 11:03:20">2022-12-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="iconfont icon-fenlei fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Design/">Design</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span id="" data-flag-title="AE动效周期表（上）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span class="waline-pageview-count" data-path="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/#post-comment"><span class="waline-comment-count" data-path="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-2.jpg" alt="周期表"></p>
+<h2 id="1-轨道旋转-在轨道上旋转对象的运动"><a href="#1-轨道旋转-在轨道上旋转对象的运动" class="headerlink" title="1. 轨道旋转(在轨道上旋转对象的运动)"></a>1. 轨道旋转(在轨道上旋转对象的运动)</h2><p><strong>原理:</strong> 移动锚点属性使物体与锚点产生距离，为旋转属性添加关键帧或表达式。</p>
+<p><strong>步骤:</strong> 新建<a target="_blank" rel="noopener" href="https://uiiiuiii.com/itag/%E5%90%88%E6%88%90">合成</a>，绘制一个圆形，取消填充，保留描边，可将图层命名为圆轨道，其次绘制一个小圆形，保留填充，取消描边，将小圆与圆轨道呈同心圆的状态，中心点一致，然后修改小圆的锚点，使小圆圆心在圆轨道上边缘点的中心上（为保证中心点一致，此处不要移动位置而是修改锚点，因为旋转是以中心点的位置进行的），接下来设置关键帧，在0S时将旋转属性添加关键帧，在2S时，将旋转属性设为360度也就是刚好小圆绕圆轨道一圈（可以通过调整时间的长短来控制小圆的旋转速度）。也可以采用表达式的方法来制作轨道旋转，在上述方法的基础上删除关键帧，按住ALT键同时在小圆的旋转属性前面的码表上单击鼠标左键，为此添加表达式，将表达式改为time*180(意思为每秒钟旋转180度)这样2秒会旋转360度为一圈，即可呈现出轨道旋转的效果。</p>
+<p><strong>拓展应用:</strong> 可将小圆复制多个，修改不同小圆中表达式的度数值，来实现雷达的效果，也可能将小圆替换成星球，月亮太阳等图形。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-3.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-4.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="2-偏移-运动沿着形状的路径旋转"><a href="#2-偏移-运动沿着形状的路径旋转" class="headerlink" title="2.偏移(运动沿着形状的路径旋转)"></a>2.偏移(运动沿着形状的路径旋转)</h2><p><strong>原理:</strong> 调节描边的虚线属性以及修改偏移的数值</p>
+<p><strong>步骤:</strong> 新建合成，双击多边形工具绘制出五边形，在属性-点中改为6，将图形变为六边形，打开描边属性，修改描边粗细，线段端点可改为方头端点，线段连接可改为圆角连接,打开虚线，点击加号，将虚线数值改为100（可根据想达到的效果字行调整数值），然后给偏移属性添加表达式为time*360(意思为每秒钟旋转360度),即可呈现出运动沿着形状的路径旋转的形态。</p>
+<p><strong>拓展应用:</strong> 可设置内框，外框，内部图形，调整它们的虚线间隙或者将六边形换成其他图形等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-5.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-6.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="3-勾画-沿着路径跑光的效果"><a href="#3-勾画-沿着路径跑光的效果" class="headerlink" title="3.勾画(沿着路径跑光的效果)"></a>3.勾画(沿着路径跑光的效果)</h2><p><strong>原理:</strong> 为纯色层添加蒙版，为蒙版路径添加勾画效果。</p>
+<p><strong>步骤:</strong> 新建合成，新建一个白色纯色层，选中纯色层绘制正矩形即为纯色层添加蒙版，在效果和预设中找到勾画，将勾画拖拽到纯色层中，在FX勾画中将描边选择蒙版和路径，路径里选择我们画好的矩形即蒙版1，片段属性改为4（需要X条线就改为X），混合模式选择透明，颜色，宽度以及硬度可根据需要自行调节，然后为旋转设置关键帧，在0S时将旋转属性添加关键帧，在2S时，将旋转属性设为360度也就是一圈。</p>
+<p><strong>拓展应用:</strong> 可用钢笔绘制蒙版，做出心电图波动的状态，或多个形状组合成旋转的轮胎等等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-7.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-8.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="4-循环"><a href="#4-循环" class="headerlink" title="4.循环"></a>4.循环</h2><p><strong>原理:</strong> 偏移效果的调节。</p>
+<p><strong>步骤:</strong> 新建合成，新建六边形，在效果和预设中找到扭曲下的偏移，将偏移拖拽到六边形上，然后为FX偏移中的“将中心转换为”这个属性加关键帧，在0S时添加关键帧，在1S15f时，把将中心转换为属性的X值改为1204（可根据合成大小以及六边形大小自行调节，让六边形重合的数值即可）,将工作区切到1S20f,给六边形一个稳定的时间，此时预览，六边形会呈现匀速运动，可打开图标编辑器，改变匀速运动为先加速运动后缓慢停下的运动轨迹，然后所有关键帧设置缓动（选择关键帧按F9键或选择关键帧，然后菜单栏找到动画-关键帧辅助-缓动）。</p>
+<p><strong>拓展应用:</strong> 可做UI界面滑动效果，长条过渡，循环效果等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-9.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-10.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="5-砖瓦匠-平铺"><a href="#5-砖瓦匠-平铺" class="headerlink" title="5.砖瓦匠(平铺)"></a>5.砖瓦匠(平铺)</h2><p><strong>原理:</strong> 为纯色层添加蒙版，为蒙版路径添加CC Tiler 。</p>
+<p><strong>步骤:</strong> 新建合成，新建白色纯色层，为纯色层建立一个矩形蒙版，然后在效果和预设中找到扭曲下的CC Tiler,将CC Tiler拖拽到纯色层上，可以看到有三个属性，scale为缩放，Center中心点，Blend w.Original为与原始图像的混合程度，在0S时为scale添加关键帧，然后在3S时把scale数值调到10%，这样就可以实现由一到多的平铺的效果，然后在3S时为Blend w.Original添加关键帧数值为100%。将时间标尺向前移动10f,将Blend w.Original的数值改为0，这样整体就有了循环衔接的感觉，最后为关键帧加上缓动。</p>
+<p><strong>拓展应用:</strong> 可替换其他形状，或一些图片来尝试做出更多有趣的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-11.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-12.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="6-极坐标"><a href="#6-极坐标" class="headerlink" title="6.极坐标"></a>6.极坐标</h2><p><strong>原理:</strong> 为图形添加极坐标效果。</p>
+<p><strong>步骤:</strong> 新建合成，新建一个矩形，然后想矩形横坐标的位置调为0，然后复制出5个矩形，将最后一个矩形的横坐标调到803（根据合成大小来设置即可）选择6个矩形，单击水平均匀分布后添加预合成，然后在效果和预设中找到扭曲下的极坐标，将极坐标拖拽到预合成上，把转换类型改为矩形到极限，然后为差值添加关键帧，0S时为0%，1S时为100%，2S时为0%，为保证整体过度自然，可在中间在相同关键帧让此状态产生停顿，最后整关键帧添加缓动，参数如下图所示，仅供参考可自行调节。</p>
+<p><strong>拓展应用:</strong> 可用网格或矩形拉长或只保留描边等图形来制作，也可多个图层结合成多个预合成制作出更多的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-13.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-14.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="7-线宽（改变图形和路径的线宽）"><a href="#7-线宽（改变图形和路径的线宽）" class="headerlink" title="7.线宽（改变图形和路径的线宽）"></a>7.线宽（改变图形和路径的线宽）</h2><p><strong>原理:</strong> 为图形添加描边宽度的效果。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个圆形,取消填充,描边改为20,然后找到内容-椭圆-描边-描边宽度,为描边宽度添加关键帧,在0S时数值为20,在1S时数值为0,然后在2S时复制第一帧关键帧，最后选择全部关键帧添加缓动。</p>
+<p><strong>拓展应用:</strong> 可以添加缩放，做成小爆炸的效果或者添加多个圆形做成水波纹的效果等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-15.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-16.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="8-图形变形"><a href="#8-图形变形" class="headerlink" title="8.图形变形"></a>8.图形变形</h2><p><strong>原理:</strong> 调整多边形内外半径。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个星形，在内容-多边形-多边星形路径中，把点改为3，然后内径和外径均改为100，此时图形由星形变成了一个六边形，然后在0S时为内径和外径添加关键帧，在20f时把内径改为50，在1S15f时把内径改为100同时为外径添加关键帧，在2S10f时把外径改为50，在3S时把外径改回去初的100。此时整体过度会比较快，我们可在每次变化中间让图形停顿5帧，然后为整体关键帧添加缓动，如下图所示。</p>
+<p><strong>拓展应用:</strong> 可以和其他效果结合使用，形成更多有趣的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-17.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-18.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="9-连续图形变形"><a href="#9-连续图形变形" class="headerlink" title="9.连续图形变形"></a>9.连续图形变形</h2><p><strong>原理:</strong> 在图形变形的基础上进行多图形的变换。</p>
+<p><strong>步骤:</strong> 可在第8个效果的基础上来制作，将第8个效果的描边改为填充，然后复制出4个图形，全部选择按U键，显示出带有关键帧的内径和外径，将第一个图形的不透明度改为100，其他图形的不透明度改为30，先将除了前两个关键帧之外的关键帧向后移动，先调整前两个关键帧，调整图形出现的时间，每个图形相隔5f（从形状5到形状1）,然后将第二组变化的关键帧移动到第一组变化结束之后（相同关键帧可以删除，如想中间有停顿也可保留并移动相应位置），每个图形相隔5f（从形状1到形状5）以此类推，如果变化更多的形态皆如此（1-5,5-1,1-5等等）</p>
+<p><strong>拓展应用:</strong> 可以变换其他的图形来进行处理也可结合其他效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-19.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-20.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="10-阴影"><a href="#10-阴影" class="headerlink" title="10.阴影"></a>10.阴影</h2><p><strong>原理:</strong> 为预合成添加CC Scale Wipe效果，结合遮罩。</p>
+<p><strong>步骤:</strong> 新建合成，把之前的第8个效果拖拽过来或者重新练习制作出第8个效果，将形状图层添加预合成（因为六边形的边界有局限性，，创建合成后边界就变成了合成的边界）然后在效果和预设中找到过渡-CC Scale Wipe，将CC Scale Wipe拖拽到预合成上，Stretch表示拉伸（最长到达边界为100，负数是向反方向进行拉伸）Center表示中心，Direction表示方向，接下来把Stretch数值设置为100，Direction数值改为120°，然后将预合成进行复制取消效果，因为作者图中是镂空的所以，我们再次复制刚刚复制好的取消效果后的预合成，将后面两个合成再次建立预合成并且为他们建立轨道蒙版，选择Alpha反转遮罩，然后将形状图形的缩放改为80（此时预览动画，会发现在变换过程中描边会有所变化），所以我们为缩放添加关键帧，0S为80%，15f为70%，20f为70%，以此类推。</p>
+<p><strong>拓展应用:</strong> 可以将阴影的颜色进行更改或为中心点添加关键帧做出更多有趣的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-21.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-22.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="11-重塑-改变形状"><a href="#11-重塑-改变形状" class="headerlink" title="11.重塑(改变形状)"></a>11.重塑(改变形状)</h2><p><strong>原理:</strong> 为纯色层添加多个蒙版结合改变形状的效果。</p>
+<p><strong>步骤:</strong> 首先用AI软件绘制出四个图形分别是：正矩形，四角星形，圆形和七角星形，然后打开AE新建合成，新建纯色层，然后到AI里选择第一个正矩形复制，到AE中选择纯色层然后粘贴（后面三个图形也是同样逐一粘贴过来，注意要选中纯色层在粘贴），这样在纯色层上将产生四个蒙版，将蒙版1的混合模式改为相加，蒙版2.3.4的混合模式改为无，然后在效果和预设中找到扭曲-改变形状，将改变形状拖拽到纯色层上，源蒙版（优先想显示的蒙版）选择蒙版1，目标蒙版（改成哪个蒙版）选择蒙版2，弹性选择超级流体（里面选项是由生硬的变化到柔软的变化逐一递减的选项），在0S时为百分比添加关键帧数值为0%，然后选择FX改变形状进行复制，一共复制出四个，分别调整源蒙版和目标蒙版（如下图），因为百分比0到百分比100，,饿过程就是源蒙版到目标蒙版的过度，我们逐一调节关键帧（具体变化时间和停顿间隔可以自行调节），最后为所有关键帧添加缓动。</p>
+<p><strong>拓展应用:</strong> 可以绘制其他图形作为蒙版或结合其他效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-23.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-24.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="12-缓动"><a href="#12-缓动" class="headerlink" title="12.缓动"></a>12.缓动</h2><p><strong>原理:</strong> 添加缓动和调整运动曲线。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个圆形，然后为位置属性加关键帧，由于真实事物是不存在匀速运动的，所以我们可以为关键帧添加缓动效果，并且调节图表编辑器，使圆形由快向慢的向前运动直到停下。然后用钢笔绘制一条与运动相符的线段，可为圆形上下加入一条虚线对比更明显，让虚线成为小圆的子集，跟随小圆运动而运动。</p>
+<p><strong>拓展应用:</strong> 可以结合矩形与其他图形做成转场的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-25.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-26.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="13-节奏"><a href="#13-节奏" class="headerlink" title="13.节奏"></a>13.节奏</h2><p><strong>原理:</strong> 缓动，曲线速度让效果更有节奏感。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个多边形（去掉填充保留描边），将点改为4，然后为外圆度添加关键帧，0S时为0°，在15f时为-612°，在1s5f时为-612°，在1s20f时为0°，然后为所有关键帧添加缓动，然后调整图标编辑器，形成先快后慢的运动轨迹，然后在15f时为形状添加关键帧，1s5f时旋转90°，在1s20f时为90°，在2s10f时为180°，并为所有旋转关键帧添加缓动，调整图标编辑器的速度。</p>
+<p><strong>拓展应用:</strong> 可以添加旋转，缩放，让更多图形融入形成带有更强的节奏感的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-27.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-28.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="14-阶梯变化"><a href="#14-阶梯变化" class="headerlink" title="14.阶梯变化"></a>14.阶梯变化</h2><p><strong>原理:</strong> 理解这个表达式:Math.floor(time*x)*y即x表示每秒旋转的次数，y表示旋转的幅度。</p>
+<p><strong>步骤:</strong> 新建合成，绘制椭圆，取消填充保留描边，作为钟表的外框，然后绘制一个矩形，然后点击添加一个中继器，副本改为36，让位置为0，然后调整旋转角度为10°（360&#x2F;36），作为表的刻度，绘制一个圆形作为重心，绘制矩形作为指针，然后为指针的选择属性添加表达式Math.floor(time*5)<em>10可以这样理解{(Math.floor(time</em>x)*y] 即x表示每秒旋转的次数，y表示旋转的幅度}，然后钟表就会按阶梯变化进行运动。</p>
+<p><strong>拓展应用:</strong> 可以绘制吃齿轮旋转的效果，添加不同表达式可使不同齿轮旋转效果不同。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-29.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-30.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="15-时间置换"><a href="#15-时间置换" class="headerlink" title="15.时间置换"></a>15.时间置换</h2><p><strong>原理:</strong> 无线电波和时间置换效果。</p>
+<p><strong>步骤:</strong> 新建合成，新建纯色层，效果和预设中找到生成-无线电波，添加到纯色层上，然后把无线电波里的多边形的边调为6，波动的方向调为30°，开始宽度和末端宽度调为10，颜色可以改为白色，新建纯色层添加图层样式为渐变叠加，将样式改为角度，然后新建合成选择将所有属性移动到新合成，新建调整图层，给调整图层添加时间置换效果，将时间置换图层改为渐变，最大位移时间改为0.5S，时间分辨率改为4（将画面分为4部分），然后在2S时为六边形里的频率加关键帧，数值为0，然后在前一帧时关键帧数值改为1。</p>
+<p><strong>拓展应用:</strong> 调整频率，位移时间等等，尝试发现一些新效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-31.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-32.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="16-尖端形状"><a href="#16-尖端形状" class="headerlink" title="16.尖端形状"></a>16.尖端形状</h2><p><strong>原理:</strong> 修剪路径以及表达式。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个六边形（要勾选贝塞尔曲线路径），然后为六边形添加修剪路径，在效果和预设中找到滑块添加到六边形上，在修剪路径中的结束属性添加表达式，并将表达式关联器拖拽到滑块上，在0S时为滑块添加关键帧数值为0，在2S时滑块数值为100，然后绘制一个圆形，找到六边形的路径进行复制，到小圆的位置上（要在0S时）进行粘贴（如出现偏差手动调节因为路径是按你第一次绘制的路径产生的如中途有移动都会产生一定的偏差），为小圆的位置属性添加表达式，找到添加Property-valueAtTime(t),用鼠标选中t,然后将表达式关联器拖拽到滑块上，因为滑块动了100步，小圆运动时间是2秒所以表达式后面需要除以100乘以2，然后圆形每次画过的端点都加一个关键帧并为关键帧添加缓动，然后调整运动图表，让整体的运动更加自然，然后在6S时加滑块的数值改为0，加缓动并调节速度。</p>
+<p><strong>拓展应用:</strong> 可以利用滑块做出多样式的转场效果等等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-33.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-34.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="17-音频波动"><a href="#17-音频波动" class="headerlink" title="17.音频波动"></a>17.音频波动</h2><p><strong>原理:</strong> 结合音乐素材，让波形随音乐节奏而动。</p>
+<p><strong>步骤:</strong> 新建合成，新建纯色层，在效果与预设中找到音频频谱拖拽到纯色层中，然后把音频素材导入进来，然后把音频频谱中的源改为我们导入进来的音频素材，起始频率和结束频率可以改变图形的样式，频段可以增加或者减少声波线条的数量，最大高度可以限制波形的高度，厚度可以更改描边的粗细，柔和度类似于羽化的感觉，显示选项改为模拟谱线，选择纯色层绘制椭圆为纯色层添加蒙版，将蒙版模式改为无，将音频频谱路径改为蒙版1，然后复制纯色层放大蒙版路径，然后改变参数，继续重复上一部操作，根据不同音乐节奏的不同出现的效果也是不同的。</p>
+<p><strong>拓展应用:</strong> 可以做不带蒙版的效果或复制多个波形改变参数调节出更多的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-35.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-36.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="18-波（制作辐射波的动作）"><a href="#18-波（制作辐射波的动作）" class="headerlink" title="18.波（制作辐射波的动作）"></a>18.波（制作辐射波的动作）</h2><p><strong>原理:</strong> 无线电波效果。</p>
+<p><strong>步骤:</strong> 新建合成，新建纯色层，然后在效果与预设中找到无线电波并为纯色层添加，将多边形的边改为6，方向旋转90°即可。其他参数可以根据自己的喜好来进行调节数值。</p>
+<p><strong>拓展应用:</strong> 可以做不带蒙版的效果或复制多个波形改变参数调节出更多的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-37.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-38.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="19-链接"><a href="#19-链接" class="headerlink" title="19.链接"></a>19.链接</h2><p><strong>原理:</strong> 图形结合光束效果与表达式。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个圆形，复制三个，改变大小和位置，然后新建纯色层，在效果和预设里找到光束并拖拽到纯色层上，柔和度改为0，颜色改为白色，调整长度以及厚度，然后选择两个圆形调出位置属性，之后为光束的起始点和结束点添加表达式，关联到两个圆形的位置上,（如果此时光束并没有把两个圆连接上可调整光束的长度），然后复制纯色层，选择其他的两个点重复上述操作，知道点皆两两相连，（共6根），然后为所有的圆的位置加关键帧每隔15f调节一下圆的位置，然后为所有关键帧添加缓动并调节运动速度。</p>
+<p><strong>拓展应用:</strong> 可以结合移动缩放等效果做出其他有趣的动态。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-39.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-40.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="20-粒子"><a href="#20-粒子" class="headerlink" title="20.粒子"></a>20.粒子</h2><p><strong>原理:</strong> 粒子效果与插件Particler。</p>
+<p><strong>步骤:</strong> 新建合成，新建纯色层，在效果和预设中找到CC Particle World并拖拽到纯色层上，为出生率，旋转，粒子寿命，出生以及死亡尺寸添加关键帧，即可得到很多有趣的效果，下面是给大家翻译好的名称，此效果最好使用插件Particler来制作，两者的效果有相似之处。</p>
+<p><strong>拓展应用:</strong> CC Particle World的翻译如下图所示（大家可手动调节不同的属性来熟悉操作）。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-41.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-42.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="21-网格"><a href="#21-网格" class="headerlink" title="21.网格"></a>21.网格</h2><p><strong>原理:</strong> 网格效果的应用。</p>
+<p><strong>步骤:</strong> 新建合成，新建纯色层，在效果和预设中找到网格并拖拽到纯色层上，大小依据改为宽度滑块，然后宽度为50在0s时加关键帧，在1S时宽度改为150，在10f后再次添加关键帧，让网格宽度保持不动，然后1S后复制第一帧关键帧粘贴到此处，最后为整体关键帧添加缓动。</p>
+<p><strong>拓展应用:</strong> 可以结合效果和预设中的其他效果来实现更多动态，比如旋转，极坐标等等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-43.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-44.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="22-遮罩擦除"><a href="#22-遮罩擦除" class="headerlink" title="22.遮罩擦除"></a>22.遮罩擦除</h2><p><strong>原理:</strong> 反转遮罩。</p>
+<p><strong>步骤:</strong> 新建合成，绘制一个圆形，为缩放属性添加关键帧，让圆形由0经过20f到100%(如绘制的圆过大不到100%到自定义数值也可以)，然后复制此图形，讲整体加关键帧向后移动20f,在形状图层1上遮罩设为alpha反转遮罩形状图层2，即可达到效果。</p>
+<p><strong>拓展应用:</strong> 可以结合变换的效果制作或使用其他蒙版遮罩。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-45.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-46.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="23-粉碎"><a href="#23-粉碎" class="headerlink" title="23.粉碎"></a>23.粉碎</h2><p><strong>原理:</strong> 破碎效果。</p>
+<p><strong>步骤:</strong> 新建合成，新建纯色层，在效果和预设中找到碎片并拖拽到纯色层上，形状图案选择玻璃（也可以自定义绘制）调节方向，速度以及凹凸深度即可出现效果。</p>
+<p><strong>拓展应用:</strong> 可调节灯光材质出现更加立体的效果。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-47.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-48.gif" alt="AE教程！动效周期表解析（上）"></p>
+<h2 id="24-卡片舞"><a href="#24-卡片舞" class="headerlink" title="24.卡片舞"></a>24.卡片舞</h2><p><strong>原理:</strong> 卡片动画的偏移。</p>
+<p><strong>步骤:</strong> 新建合成，创建矩形，然后在效果和预设中找到卡片动画并添加到矩形上,因为行和列的数值是根据合成大小来确定的，矩形是比合成小的，所有行列要由肉眼去看而不是针对数值去调节,将灯光的强度深度环境光均调节到最大，为Z轴偏移和y轴偏移添加关键帧，复制矩形，删除所有关键帧，在下边图层的最后一帧关键帧对应位置，为复制好的图层的X轴偏移添加关键帧，可以在中间第二次变换是添加5f的停顿，并为所有关键帧添加缓动效果。</p>
+<p><strong>拓展应用:</strong> 可以结合破碎效果与时间反向，使图形或文字由破碎到复原等等。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-49.jpg" alt="AE教程！动效周期表解析（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-50.gif" alt="AE教程！动效周期表解析（上）"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://img.zcool.cn/community/01539f5dd3bde6a8012129e222a3f2.jpg">凌旬</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://www.zcool.com.cn/article/ZMTEwNDAwOA==.html">https://www.zcool.com.cn/article/ZMTEwNDAwOA==.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处来自作者</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AE/">AE</a><a class="post-meta__tags" href="/tags/%E5%8A%A8%E6%95%88/">动效</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/12/20/%E5%BA%95%E9%83%A8%E5%AF%BC%E8%88%AA%E5%9B%BE%E6%A0%87%E6%89%AD%E8%B5%B7%E6%9D%A5/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2022/07/csd-220706-ndtb-1.gif" onerror="onerror=null;src='/img/404.webp'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">底部导航图标扭起来</div></div></a></div><div class="next-post pull-right"><a href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%AD%EF%BC%89/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210422-aejc-1.gif" onerror="onerror=null;src='/img/404.webp'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">AE动效周期表（中）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/12/22/18%E7%A7%8D%E5%B8%B8%E7%94%A8AE%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90/" title="18种常用AE表达式解析"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/03/rr-210317-aebds-1.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-22</div><div class="title">18种常用AE表达式解析</div></div></a></div><div><a href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/" title="AE动效周期表（下）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210427-aejc-1.gif" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-21</div><div class="title">AE动效周期表（下）</div></div></a></div><div><a href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%AD%EF%BC%89/" title="AE动效周期表（中）"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210422-aejc-1.gif" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-21</div><div class="title">AE动效周期表（中）</div></div></a></div><div><a href="/2022/12/20/%E5%BA%95%E9%83%A8%E5%AF%BC%E8%88%AA%E5%9B%BE%E6%A0%87%E6%89%AD%E8%B5%B7%E6%9D%A5/" title="底部导航图标扭起来"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2022/07/csd-220706-ndtb-1.gif" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-20</div><div class="title">底部导航图标扭起来</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/logo.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XIAOO</div><div class="author-info__description">行动是最直接的回应</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="iconfont icon-tongzhi"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="iconfont icon-tiaojietubiao"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%BD%A8%E9%81%93%E6%97%8B%E8%BD%AC-%E5%9C%A8%E8%BD%A8%E9%81%93%E4%B8%8A%E6%97%8B%E8%BD%AC%E5%AF%B9%E8%B1%A1%E7%9A%84%E8%BF%90%E5%8A%A8"><span class="toc-text">1. 轨道旋转(在轨道上旋转对象的运动)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%81%8F%E7%A7%BB-%E8%BF%90%E5%8A%A8%E6%B2%BF%E7%9D%80%E5%BD%A2%E7%8A%B6%E7%9A%84%E8%B7%AF%E5%BE%84%E6%97%8B%E8%BD%AC"><span class="toc-text">2.偏移(运动沿着形状的路径旋转)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%8B%BE%E7%94%BB-%E6%B2%BF%E7%9D%80%E8%B7%AF%E5%BE%84%E8%B7%91%E5%85%89%E7%9A%84%E6%95%88%E6%9E%9C"><span class="toc-text">3.勾画(沿着路径跑光的效果)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%BE%AA%E7%8E%AF"><span class="toc-text">4.循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%A0%96%E7%93%A6%E5%8C%A0-%E5%B9%B3%E9%93%BA"><span class="toc-text">5.砖瓦匠(平铺)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%9E%81%E5%9D%90%E6%A0%87"><span class="toc-text">6.极坐标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E7%BA%BF%E5%AE%BD%EF%BC%88%E6%94%B9%E5%8F%98%E5%9B%BE%E5%BD%A2%E5%92%8C%E8%B7%AF%E5%BE%84%E7%9A%84%E7%BA%BF%E5%AE%BD%EF%BC%89"><span class="toc-text">7.线宽（改变图形和路径的线宽）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E5%9B%BE%E5%BD%A2%E5%8F%98%E5%BD%A2"><span class="toc-text">8.图形变形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%BF%9E%E7%BB%AD%E5%9B%BE%E5%BD%A2%E5%8F%98%E5%BD%A2"><span class="toc-text">9.连续图形变形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%98%B4%E5%BD%B1"><span class="toc-text">10.阴影</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E9%87%8D%E5%A1%91-%E6%94%B9%E5%8F%98%E5%BD%A2%E7%8A%B6"><span class="toc-text">11.重塑(改变形状)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E7%BC%93%E5%8A%A8"><span class="toc-text">12.缓动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-%E8%8A%82%E5%A5%8F"><span class="toc-text">13.节奏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E9%98%B6%E6%A2%AF%E5%8F%98%E5%8C%96"><span class="toc-text">14.阶梯变化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-%E6%97%B6%E9%97%B4%E7%BD%AE%E6%8D%A2"><span class="toc-text">15.时间置换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-%E5%B0%96%E7%AB%AF%E5%BD%A2%E7%8A%B6"><span class="toc-text">16.尖端形状</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17-%E9%9F%B3%E9%A2%91%E6%B3%A2%E5%8A%A8"><span class="toc-text">17.音频波动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18-%E6%B3%A2%EF%BC%88%E5%88%B6%E4%BD%9C%E8%BE%90%E5%B0%84%E6%B3%A2%E7%9A%84%E5%8A%A8%E4%BD%9C%EF%BC%89"><span class="toc-text">18.波（制作辐射波的动作）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19-%E9%93%BE%E6%8E%A5"><span class="toc-text">19.链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20-%E7%B2%92%E5%AD%90"><span class="toc-text">20.粒子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#21-%E7%BD%91%E6%A0%BC"><span class="toc-text">21.网格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#22-%E9%81%AE%E7%BD%A9%E6%93%A6%E9%99%A4"><span class="toc-text">22.遮罩擦除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#23-%E7%B2%89%E7%A2%8E"><span class="toc-text">23.粉碎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#24-%E5%8D%A1%E7%89%87%E8%88%9E"><span class="toc-text">24.卡片舞</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="iconfont icon-zuijingengxin"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/22/Butterfly%E9%AD%94%E6%94%B9/" title="Butterfly魔改"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.zcool.cn/community/014bc46302f4600002c313f78982d2.jpg?x-oss-process=image/auto-orient,1/resize,m_lfit,w_1280,limit_1/sharpen,100/format,webp/quality,q_100" onerror="this.onerror=null;this.src='/img/404.webp'" alt="Butterfly魔改"/></a><div class="content"><a class="title" href="/2022/12/22/Butterfly%E9%AD%94%E6%94%B9/" title="Butterfly魔改">Butterfly魔改</a><time datetime="2022-12-22T03:55:59.000Z" title="发表于 2022-12-22 11:55:59">2022-12-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/22/18%E7%A7%8D%E5%B8%B8%E7%94%A8AE%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90/" title="18种常用AE表达式解析"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/03/rr-210317-aebds-1.jpg" onerror="this.onerror=null;this.src='/img/404.webp'" alt="18种常用AE表达式解析"/></a><div class="content"><a class="title" href="/2022/12/22/18%E7%A7%8D%E5%B8%B8%E7%94%A8AE%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%A7%A3%E6%9E%90/" title="18种常用AE表达式解析">18种常用AE表达式解析</a><time datetime="2022-12-22T01:50:43.000Z" title="发表于 2022-12-22 09:50:43">2022-12-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/" title="AE动效周期表（下）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210427-aejc-1.gif" onerror="this.onerror=null;this.src='/img/404.webp'" alt="AE动效周期表（下）"/></a><div class="content"><a class="title" href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/" title="AE动效周期表（下）">AE动效周期表（下）</a><time datetime="2022-12-21T07:32:13.000Z" title="发表于 2022-12-21 15:32:13">2022-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%AD%EF%BC%89/" title="AE动效周期表（中）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210422-aejc-1.gif" onerror="this.onerror=null;this.src='/img/404.webp'" alt="AE动效周期表（中）"/></a><div class="content"><a class="title" href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%AD%EF%BC%89/" title="AE动效周期表（中）">AE动效周期表（中）</a><time datetime="2022-12-21T07:31:13.000Z" title="发表于 2022-12-21 15:31:13">2022-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/" title="AE动效周期表（上）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://images.uiiiuiii.com/wp-content/uploads/2021/04/xjc-210412-dxzq-1.gif" onerror="this.onerror=null;this.src='/img/404.webp'" alt="AE动效周期表（上）"/></a><div class="content"><a class="title" href="/2022/12/21/AE%E5%8A%A8%E6%95%88%E5%91%A8%E6%9C%9F%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/" title="AE动效周期表（上）">AE动效周期表（上）</a><time datetime="2022-12-21T07:30:13.000Z" title="发表于 2022-12-21 15:30:13">2022-12-21</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By XIAOO</div><div class="footer_custom_text">直面最深的恐惧时, 真正的勇气就会显现</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadWaline () {
+  function insertCSS () {
+    const link = document.createElement("link")
+    link.rel = "stylesheet"
+    link.href = "https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css"
+    document.head.appendChild(link)
+  }
+
+  function initWaline () {
+    const waline = Waline.init(Object.assign({
+      el: '#waline-wrap',
+      serverURL: 'https://pinglun-xiaoo.vercel.app/',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      path: window.location.pathname,
+      comment: true,
+    }, null))
+  }
+
+  if (typeof Waline === 'function') initWaline()
+  else {
+    insertCSS()
+    getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js').then(initWaline)
+  }
+}
+
+if ('Waline' === 'Waline' || !false) {
+  if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+  else setTimeout(loadWaline, 0)
+} else {
+  function loadOtherComment () {
+    loadWaline()
+  }
+}</script></div><script src="/js/mouse.js"></script><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script src="/js/sun_moon.js" async></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script></div></body></html>
