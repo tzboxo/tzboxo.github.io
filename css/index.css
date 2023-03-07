@@ -123,13 +123,46 @@ img {
 /* 折叠列表 */
 details {
     padding: 12px 16px;
-    background: #eee8da;
+    background: rgba(238, 232, 218,.3);
     margin-bottom: 1em;
-    box-shadow: 2px 4px #1f2d3d;
-    border: 1px solid black;
+    /* box-shadow: 2px 4px #1f2d3d;
+    border: 1px solid black; */
     border-radius: 8px;
 }
-
+.hl-label.default {
+    background: rgba(52, 204, 50, .1) !important;
+    color: rgba(52, 204, 50, 1);
+}
+.hl-label.blue {
+    background: rgba(0, 120, 255, .1) !important;
+    color: rgba(0, 120, 255, 1);
+}
+.hl-label.pink {
+    background: rgba(255, 137, 187, .1) !important;
+    color: rgba(255, 137, 187, 1);
+}
+.hl-label.red {
+    background: rgba(246, 56, 43, .1) !important;
+    color: rgba(246, 56, 43, 1);
+}
+.hl-label.purple {
+    background: rgba(86, 44, 242, .1) !important;
+    color: rgba(86, 44, 242, 1);
+}
+.hl-label.orange {
+    background: rgba(255, 102, 18, .1) !important;
+    color: rgba(255, 102, 18, 1);
+}
+.hl-label.green {
+    background: rgba(52, 204, 50, .1) !important;
+    color: rgba(52, 204, 50, 1);
+}
+/* $tz-color-red = #f6382b
+$tz-color-orange = #ff6612
+$tz-color-blue = #0078ff
+$tz-color-green = #34cc32
+$tz-color-pink = #ff89bb
+$tz-color-purple = #562cf2 */
 /* 背景宇宙星光  */
 #universe{
     display: block;
