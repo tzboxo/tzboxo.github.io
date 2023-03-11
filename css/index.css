@@ -1632,6 +1632,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'hytmr';
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  text-align: justify;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -1683,21 +1684,13 @@ h5 code,
 h6 code {
   font-size: inherit !important;
 }
-h1 {
-  display: table;
-  padding: 0 1em;
-  border-bottom: 2px solid #00c6ae;
-  text-align: center;
-  margin: 2em auto 1em;
-}
 h2 {
   display: table;
   padding: 0 1em;
   text-align: center;
   margin: 2em auto 1em;
-  background: #00c6ae;
-  color: #fff;
-  border-radius: 5px;
+  color: #00c6ae;
+  border-bottom: 3px solid #00c6ae;
 }
 h3 {
   padding-left: 8px;
@@ -1781,9 +1774,6 @@ a {
 a:hover {
   color: #00c6ae;
 }
-strong {
-  color: #00c6ae;
-}
 .is-center {
   text-align: center;
 }
@@ -1823,7 +1813,7 @@ blockquote {
   padding: 12px 15px;
   border-radius: 8px;
   background-color: rgba(0,198,174,0.08);
-  color: #1f2d3d;
+  color: var(--font-color);
 }
 blockquote footer cite:before {
   padding: 0 5px;
@@ -3859,6 +3849,9 @@ h1.page-title + .tag-cloud-list {
 #post-info .post-title .post-edit-link {
   padding-left: 10px;
 }
+#post-info .post-title h1 {
+  color: #f00;
+}
 #post-info #post-meta {
   color: var(--light-grey);
   font-size: 95%;
@@ -4293,6 +4286,7 @@ h1.page-title + .tag-cloud-list {
 #post .post-copyright .post-copyright-info a {
   text-decoration: underline;
   word-break: break-word;
+  color: var(--font-color);
 }
 #post .post-copyright .post-copyright-info a:hover {
   text-decoration: none;
