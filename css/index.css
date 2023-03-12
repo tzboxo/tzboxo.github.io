@@ -1633,6 +1633,7 @@ body {
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-align: justify;
+  text-justify: inter-ideograph;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -2509,8 +2510,12 @@ figure.highlight pre .javascript .function {
   background: var(--card-bg);
 }
 .flink h2 {
-  margin-top: 32px;
+  margin: 32px 0 0 0;
   line: height 2em;
+  padding: 0;
+  text-align: left;
+  color: #00c6ae;
+  border-bottom: 0 solid #00c6ae;
 }
 .flink-desc {
   margin: 0 0 2em 0;
