@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hexo 填坑</title>
+      <link href="/2024/07/23/Hexo%20%E5%A1%AB%E5%9D%91/"/>
+      <url>/2024/07/23/Hexo%20%E5%A1%AB%E5%9D%91/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、Hexo-d-报错"><a href="#一、Hexo-d-报错" class="headerlink" title="一、Hexo d 报错"></a>一、Hexo d 报错</h1><h2 id="1-错误-没有这样的文件或目录"><a href="#1-错误-没有这样的文件或目录" class="headerlink" title="1. 错误:没有这样的文件或目录"></a>1. 错误:没有这样的文件或目录</h2><p><strong>错误</strong><br>博客本地 <code>hexo d</code> 正常，GitHub 上报错，显示一下信息</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Error: Logging at level: debug GitHub Pages: github-pages v231 GitHub Pages: jekyll v3.9.5 Theme: jekyll-theme-primer Theme <span class="built_in">source</span>: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0 Requiring: jekyll-github-metadata Requiring: jekyll-seo-tag Requiring: jekyll-coffeescript Requiring: jekyll-commonmark-ghpages Requiring: jekyll-gist Requiring: jekyll-github-metadata Requiring: jekyll-paginate Requiring: jekyll-relative-links Requiring: jekyll-optional-front-matter Requiring: jekyll-readme-index Requiring: jekyll-default-layout Requiring: jekyll-titles-from-headings GitHub Metadata: Initializing... Source: /github/workspace/./docs Destination: /github/workspace/./docs/_site Incremental build: disabled. Enable with --incremental Generating... Generating: JekyllOptionalFrontMatter::Generator finished <span class="keyword">in</span> 1.0981e-05 seconds. Generating: JekyllReadmeIndex::Generator finished <span class="keyword">in</span> 5.55e-06 seconds. Generating: Jekyll::Paginate::Pagination finished <span class="keyword">in</span> 2.674e-06 seconds. Generating: JekyllRelativeLinks::Generator finished <span class="keyword">in</span> 2.6639e-05 seconds. Generating: JekyllDefaultLayout::Generator finished <span class="keyword">in</span> 1.0209e-05 seconds. Generating: JekyllTitlesFromHeadings::Generator finished <span class="keyword">in</span> 8.055e-06 seconds. Rendering: assets/css/style.scss Pre-Render Hooks: assets/css/style.scss Rendering Markup: assets/css/style.scss github-pages 231 | Error: No such file or directory @ dir_chdir - /github/workspace/docs</span><br></pre></td></tr></table></figure><p><strong>解决</strong></p><blockquote><p>修改 GitHub Page 仓库中 –》设置 –》 Page；把里面的 <code>\docs</code>，改成 <code>\root</code> 即可<br><img src="https://gd-hbimg.huaban.com/9957513cd8dc050e88883d80a9e1f902e6a2e3b816e0d-mg36Xv"></p></blockquote><hr><h1 id="二、npm-i-命令提示错误"><a href="#二、npm-i-命令提示错误" class="headerlink" title="二、npm i 命令提示错误"></a>二、npm i 命令提示错误</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm WARN old lockfile FetchError: request to https://registry.npm.taobao.org/on-headers failed, reason: certificate has expired</span><br><span class="line"></span><br><span class="line">Npm WARN old lockfile   code: <span class="string">&#x27;CERT_HAS_EXPIRED&#x27;</span>,</span><br><span class="line"></span><br><span class="line">Npm WARN old lockfile   errno: <span class="string">&#x27;CERT_HAS_EXPIRED&#x27;</span>,</span><br><span class="line"></span><br><span class="line">Npm WARN old lockfile   <span class="built_in">type</span>: <span class="string">&#x27;system&#x27;</span></span><br></pre></td></tr></table></figure><p>最后定位在了 CERT_HAS_EXPIRED 这个错误代码上。</p><p><strong>原因：</strong></p><p>遇到 <code>CERT_HAS_EXPIRED </code>错误通常意味着尝试连接的服务器的 SSL 证书已过期。这个问题可能出现在你使用的 npm 镜像上（我用的是淘宝镜像）</p><p><strong>解决方案：</strong></p><p><strong>方法 1：临时忽略 SSL 证书验证</strong></p><p>作为临时解决方案，你可以通过设置 npm 配置来忽略 SSL 证书验证。请注意，这种方法会降低安全性，不推荐作为长期解决方案。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Npm config <span class="built_in">set</span> strict-ssl <span class="literal">false</span></span><br></pre></td></tr></table></figure><p>安装完所需的包后，最好将此设置还原，以保持更高的安全性：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Npm config <span class="built_in">set</span> strict-ssl <span class="literal">true</span></span><br></pre></td></tr></table></figure><p><strong>方法 2：更新 npm 和 Node. Js</strong></p><p>确保你的 npm 和 Node. Js 版本是最新的。过时的版本可能不会正确处理 SSL 证书。可以通过下面的命令更新 npm 和 Node. Js：</p><p>更新 npm：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm@latest</span><br></pre></td></tr></table></figure><p>更新 Node. Js：访问 Node. Js 官网下载并安装最新版本。</p><blockquote><p><strong>方法 3：更换 npm 镜像源</strong></p></blockquote><p>如果问题是由特定镜像源的证书问题导致的，尝试更换到官方 npm 镜像源或其他镜像源：</p><p>切换到 npm 官方镜像源：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org/</span><br></pre></td></tr></table></figure><p>或者，使用其他可用的镜像源，例如华为云镜像源：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://mirrors.huaweicloud.com/repository/npm/</span><br></pre></td></tr></table></figure><hr><p>参考：<br><a href="https://blog.csdn.net/weixin_50503886/article/details/136177499">CERT_HAS_EXPIRED错误如何解决_cert has expired-CSDN博客</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 填坑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly魔改</title>
       <link href="/2022/12/22/Butterfly%E9%AD%94%E6%94%B9/"/>
       <url>/2022/12/22/Butterfly%E9%AD%94%E6%94%B9/</url>
@@ -268,6 +293,8 @@
       
         <tags>
             
+            <tag> Butterfly </tag>
+            
             <tag> 搭建 </tag>
             
         </tags>
@@ -302,6 +329,31 @@
     
     
     <entry>
+      <title>导航栏居中</title>
+      <link href="/2022/11/22/%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%B1%85%E4%B8%AD/"/>
+      <url>/2022/11/22/%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%B1%85%E4%B8%AD/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/main/img/nav.png"></p><h2 id="分离搜索模块"><a href="#分离搜索模块" class="headerlink" title="分离搜索模块"></a>分离搜索模块</h2><h4 id="安装搜索插件"><a href="#安装搜索插件" class="headerlink" title="安装搜索插件"></a>安装搜索插件</h4><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-generator-search</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure><h4 id="开启-Blog-搜索功能"><a href="#开启-Blog-搜索功能" class="headerlink" title="开启 Blog 搜索功能"></a>开启 Blog 搜索功能</h4><p><code>_config.butterfly.yml</code></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="string">local_search</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">CDN:</span></span><br></pre></td></tr></table></figure><h4 id="搜索放置右侧"><a href="#搜索放置右侧" class="headerlink" title="搜索放置右侧"></a>搜索放置右侧</h4><p><code>themes &gt; butterfly &gt; layout &gt; includes &gt; header &gt; nav.pug</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">nav<span class="comment">#nav</span></span><br><span class="line">  span<span class="comment">#blog_name</span></span><br><span class="line">    a<span class="comment">#site-name(href=url_for(&#x27;/&#x27;)) #[=config.title]</span></span><br><span class="line">    </span><br><span class="line">  <span class="comment">#menus</span></span><br><span class="line">    !=partial(<span class="string">&#x27;includes/header/menu_item&#x27;</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;)</span><br><span class="line"></span><br><span class="line">  <span class="comment">#navFn</span></span><br><span class="line">    <span class="keyword">if</span> (theme.algolia_search.enable || theme.local_search.enable)</span><br><span class="line">      <span class="comment">#search-button</span></span><br><span class="line">        a.site-page.social-icon.search</span><br><span class="line">          i.iconfont.icon-sousuo</span><br><span class="line">          span=<span class="string">&#x27; &#x27;</span>+_p(<span class="string">&#x27;搜索&#x27;</span>)</span><br><span class="line">    <span class="comment">#toggle-menu</span></span><br><span class="line">      a.site-page</span><br><span class="line">        i.fas.fa-bars.fa-fw</span><br></pre></td></tr></table></figure><h2 id="导航栏居中"><a href="#导航栏居中" class="headerlink" title="导航栏居中"></a>导航栏居中</h2><p><code>themes &gt; butterfly &gt; source &gt; css &gt; _custom &gt; custom.css</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 导航栏居中 */</span></span><br><span class="line"><span class="selector-id">#navFn</span>&#123;</span><br><span class="line"><span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line"><span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#nav</span></span><br><span class="line">  <span class="selector-id">#search-button</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0.3rem</span> ;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">0.3rem</span>;</span><br><span class="line">    <span class="attribute">text-shadow</span>: <span class="number">0.05rem</span> <span class="number">0.05rem</span> <span class="number">0.1rem</span> <span class="built_in">rgb</span>(<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> / <span class="number">30%</span>);</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Butterfly </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 魔改 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写作语法</title>
       <link href="/2022/11/22/%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95/"/>
       <url>/2022/11/22/%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95/</url>
@@ -321,31 +373,6 @@
             <tag> 魔改 </tag>
             
             <tag> 写作 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>导航栏居中</title>
-      <link href="/2022/11/22/%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%B1%85%E4%B8%AD/"/>
-      <url>/2022/11/22/%E5%AF%BC%E8%88%AA%E6%A0%8F%E5%B1%85%E4%B8%AD/</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/main/img/nav.png"></p><h2 id="分离搜索模块"><a href="#分离搜索模块" class="headerlink" title="分离搜索模块"></a>分离搜索模块</h2><h4 id="安装搜索插件"><a href="#安装搜索插件" class="headerlink" title="安装搜索插件"></a>安装搜索插件</h4><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo<span class="literal">-generator-search</span> <span class="literal">--save</span></span><br></pre></td></tr></table></figure><h4 id="开启-Blog-搜索功能"><a href="#开启-Blog-搜索功能" class="headerlink" title="开启 Blog 搜索功能"></a>开启 Blog 搜索功能</h4><p><code>_config.butterfly.yml</code></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Local search</span></span><br><span class="line"><span class="string">local_search</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">CDN:</span></span><br></pre></td></tr></table></figure><h4 id="搜索放置右侧"><a href="#搜索放置右侧" class="headerlink" title="搜索放置右侧"></a>搜索放置右侧</h4><p><code>themes &gt; butterfly &gt; layout &gt; includes &gt; header &gt; nav.pug</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">nav<span class="comment">#nav</span></span><br><span class="line">  span<span class="comment">#blog_name</span></span><br><span class="line">    a<span class="comment">#site-name(href=url_for(&#x27;/&#x27;)) #[=config.title]</span></span><br><span class="line">    </span><br><span class="line">  <span class="comment">#menus</span></span><br><span class="line">    !=partial(<span class="string">&#x27;includes/header/menu_item&#x27;</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;)</span><br><span class="line"></span><br><span class="line">  <span class="comment">#navFn</span></span><br><span class="line">    <span class="keyword">if</span> (theme.algolia_search.enable || theme.local_search.enable)</span><br><span class="line">      <span class="comment">#search-button</span></span><br><span class="line">        a.site-page.social-icon.search</span><br><span class="line">          i.iconfont.icon-sousuo</span><br><span class="line">          span=<span class="string">&#x27; &#x27;</span>+_p(<span class="string">&#x27;搜索&#x27;</span>)</span><br><span class="line">    <span class="comment">#toggle-menu</span></span><br><span class="line">      a.site-page</span><br><span class="line">        i.fas.fa-bars.fa-fw</span><br></pre></td></tr></table></figure><h2 id="导航栏居中"><a href="#导航栏居中" class="headerlink" title="导航栏居中"></a>导航栏居中</h2><p><code>themes &gt; butterfly &gt; source &gt; css &gt; _custom &gt; custom.css</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 导航栏居中 */</span></span><br><span class="line"><span class="selector-id">#navFn</span>&#123;</span><br><span class="line"><span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line"><span class="attribute">text-align</span>: right;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#nav</span></span><br><span class="line">  <span class="selector-id">#search-button</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0.3rem</span> ;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">padding-bottom</span>: <span class="number">0.3rem</span>;</span><br><span class="line">    <span class="attribute">text-shadow</span>: <span class="number">0.05rem</span> <span class="number">0.05rem</span> <span class="number">0.1rem</span> <span class="built_in">rgb</span>(<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> / <span class="number">30%</span>);</span><br><span class="line">    <span class="attribute">cursor</span>: pointer;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> Butterfly </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 魔改 </tag>
             
         </tags>
       
