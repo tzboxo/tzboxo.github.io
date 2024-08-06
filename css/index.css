@@ -1686,12 +1686,9 @@ h6 code {
   font-size: inherit !important;
 }
 h2 {
-  display: table;
   padding: 0 1em;
-  text-align: center;
   margin: 2em auto 1em;
   color: #00c6ae;
-  border-bottom: 3px solid #00c6ae;
 }
 h3 {
   padding-left: 8px;
