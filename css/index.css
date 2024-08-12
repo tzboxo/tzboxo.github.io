@@ -34,10 +34,14 @@
     }
 }
 /* 全局字体设置 */
-
+/* 
 @font-face {
     font-family: 'hytmr';
     src: url(/fonts/hytmr.woff);
+} */
+@font-face {
+    font-family: 'hytmr';
+    src: url(/fonts/hwmct.woff2);
 }
 
 /* 鼠标样式 */
@@ -174,6 +178,12 @@ $tz-color-blue = #0078ff
 $tz-color-green = #34cc32
 $tz-color-pink = #ff89bb
 $tz-color-purple = #562cf2 */
+/*代码框 字体设置*/
+#article-container pre {
+	padding: 1px 3px;
+	margin: 0 3px;
+	font-family: 'Fira Code', monospace !important;
+}
 /* 背景宇宙星光  */
 #universe{
     display: block;
