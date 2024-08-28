@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /**
-   * Rightside
+   * Right side
    */
   const rightSideFn = {
     switchReadMode: () => { // read-mode
