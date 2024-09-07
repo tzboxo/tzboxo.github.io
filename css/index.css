@@ -40,6 +40,10 @@
     src: url(/fonts/hytmr.woff);
 } */
 @font-face {
+    font-family: 'mono';
+    src: url(/fonts/mono.woff2);
+}
+@font-face {
     font-family: 'hytmr';
     src: url(/fonts/hwmct.woff);
 }
@@ -182,7 +186,7 @@ $tz-color-purple = #562cf2 */
 #article-container pre {
 	padding: 1px 3px;
 	margin: 0 3px;
-	font-family: 'Fira Code', monospace !important;
+	font-family: 'mono', monospace !important;
 }
 /* 背景宇宙星光  */
 #universe{
