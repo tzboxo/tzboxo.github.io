@@ -1633,13 +1633,8 @@ h6 code {
   font-size: inherit !important;
 }
 h2 {
-  padding: 0 1em;
   margin: 2em auto 1em;
   color: #00c6ae;
-}
-h3 {
-  padding-left: 8px;
-  border-left: 3px solid #00c6ae;
 }
 * {
   -webkit-box-sizing: border-box;
