@@ -49,20 +49,20 @@
         <div class="container">
             
   <div class="category-container">
-    <h1 class="category-title">标签: 功能测试</h1>
+    <h1 class="category-title">标签: 命令</h1>
 
     
       <div class="posts-grid">
         
           <div class="post-item">
-            <a href="/2025/08/05/%E8%AF%AD%E6%B3%95%E7%A4%BA%E4%BE%8B%E6%96%87%E7%AB%A0/">
+            <a href="/2025/08/06/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E9%9B%86%E5%90%88/">
               
-                <div class="post-cover" style="background-image: url('https://oss.012700.xyz/butterfly/2024/11/butterfly-docs-changelog-cover-7.png');"></div>
+                <div class="post-cover" style="background-image: url('https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg');"></div>
               
               <div class="post-info">
-                <h2 class="post-title">完整功能示例文章</h2>
+                <h2 class="post-title">常用命令集合</h2>
                 <div class="title-divider"></div>
-                <div class="post-date">2025-08-05</div>
+                <div class="post-date">2025-08-06</div>
               </div>
             </a>
           </div>
@@ -88,10 +88,43 @@
     }
 
     .posts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
       margin-bottom: 30px;
+    }
+
+    .post-item {
+      flex: 0 1 calc(33.333% - 20px);
+      min-width: 250px;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    
+    @media (max-width: 1200px) {
+      .posts-grid {
+        gap: 20px;
+      }
+      
+      .post-item {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .posts-grid {
+        gap: 15px;
+      }
+      
+      .post-item {
+        flex: 0 1 100%;
+      }
+      
+      .post-title {
+        font-size: 16px;
+      }
     }
 
     .post-item {
@@ -128,7 +161,7 @@
       font-weight: bold;
       color: #333;
       margin-bottom: 15px;
-      height: 54px;
+      max-height: 54px;
       line-height: 27px;
       overflow: hidden;
       display: -webkit-box;
@@ -178,8 +211,8 @@
     .no-posts {
       text-align: center;
       color: #999;
-      font-style: italic;
-      font-size: 1.2em;
+      font-size: 16px;
+      padding: 40px 0;
     }
   </style>
         </div>

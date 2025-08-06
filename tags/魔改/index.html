@@ -49,7 +49,7 @@
         <div class="container">
             
   <div class="category-container">
-    <h1 class="category-title">标签: 示例</h1>
+    <h1 class="category-title">标签: 魔改</h1>
 
     
       <div class="posts-grid">
@@ -88,10 +88,43 @@
     }
 
     .posts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
       margin-bottom: 30px;
+    }
+
+    .post-item {
+      flex: 0 1 calc(33.333% - 20px);
+      min-width: 250px;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    
+    @media (max-width: 1200px) {
+      .posts-grid {
+        gap: 20px;
+      }
+      
+      .post-item {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .posts-grid {
+        gap: 15px;
+      }
+      
+      .post-item {
+        flex: 0 1 100%;
+      }
+      
+      .post-title {
+        font-size: 16px;
+      }
     }
 
     .post-item {
@@ -128,7 +161,7 @@
       font-weight: bold;
       color: #333;
       margin-bottom: 15px;
-      height: 54px;
+      max-height: 54px;
       line-height: 27px;
       overflow: hidden;
       display: -webkit-box;
@@ -178,8 +211,8 @@
     .no-posts {
       text-align: center;
       color: #999;
-      font-style: italic;
-      font-size: 1.2em;
+      font-size: 16px;
+      padding: 40px 0;
     }
   </style>
         </div>

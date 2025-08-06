@@ -127,13 +127,18 @@ a:hover {
 
 /* 网格布局样式 */
 .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
 }
 
 .post-item {
+    flex: 0 1 calc(33.333% - 20px);
+    min-width: 250px;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -166,7 +171,7 @@ a:hover {
     font-weight: bold;
     color: #333;
     margin-bottom: 15px; /* 统一间距 */
-    height: 54px; /* 两行高度 */
+    max-height: 54px; /* 两行高度 */
     line-height: 27px;
     overflow: hidden;
     display: -webkit-box;
@@ -281,13 +286,21 @@ a:hover {
 /* 响应式设计 */
 @media (max-width: 1200px) {
     .posts-grid {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .post-item {
+        flex: 0 1 calc(50% - 10px);
     }
 }
 
 @media (max-width: 768px) {
     .posts-grid {
-        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .post-item {
+        flex: 0 1 100%;
     }
     
     .nav-item {

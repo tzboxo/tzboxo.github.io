@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TZ隅烬</title>
+    <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-left">
+                <div class="logo" style="width: 48px; height: 48px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;"></div>
+                <div class="title-container">
+                    <span class="main-title">TZ隅烬</span>
+                    <span class="subtitle">在荒寂处黯燃</span>
+                </div>
+            </a>
+            
+            <div class="navbar-right">
+                
+                    
+                        <a href="/" class="nav-item">OvO</a>
+                    
+                        <a href="/mulinsen/" class="nav-item">木林森</a>
+                    
+                        <a href="/bbd/" class="nav-item">逼逼叨</a>
+                    
+                        <a href="/nayuanfang/" class="nav-item">那远方</a>
+                    
+                        <a href="/about/" class="nav-item">碎碎念</a>
+                    
+                
+                
+                    <button class="search-btn" aria-label="搜索">
+                        <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z"></path>
+                        </svg>
+                    </button>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="container">
+            
+<article class="post-container">
+  <div class="post-cover">
+    
+      <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="常用命令集合">
+    
+  </div>
+  
+  <header class="post-header">
+    <h1 class="post-title">常用命令集合</h1>
+    <div class="post-meta">
+      
+      <time class="post-date" datetime="2025-08-06T03:53:54.000Z">
+        2025-08-06
+      </time>
+      
+        <span class="post-category">
+          
+            <a href="/categories/Blog/">Blog</a>
+          
+        </span>
+      
+      
+        <span class="post-tags">
+          
+            <a href="/tags/%E5%91%BD%E4%BB%A4/">命令</a>
+          
+            <a href="/tags/%E5%A1%AB%E5%9D%91/">填坑</a>
+          
+        </span>
+      
+    </div>
+  </header>
+
+    <div class="post-content">
+      <h2 id="清空github仓库内的所有文件"><a href="#清空github仓库内的所有文件" class="headerlink" title="清空github仓库内的所有文件"></a>清空github仓库内的所有文件</h2><h3 id="方法-1：通过命令行操作（推荐）"><a href="#方法-1：通过命令行操作（推荐）" class="headerlink" title="方法 1：通过命令行操作（推荐）"></a>方法 1：通过命令行操作（推荐）</h3><ol>
+<li>首先克隆仓库到本地</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/你的用户名/你的仓库名.git</span><br><span class="line"><span class="built_in">cd</span> 你的仓库名</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>删除所有文件（保留.git 目录）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 删除所有文件和文件夹（包括隐藏文件）</span></span><br><span class="line">git <span class="built_in">rm</span> -rf .</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>提交更改并推送到远程仓库</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个空提交（如果没有文件可提交）</span></span><br><span class="line">git commit --allow-empty -m <span class="string">&quot;清空仓库所有文件&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送更改（这会删除远程仓库中的所有文件）</span></span><br><span class="line">git push origin main  <span class="comment"># 注意：如果你的主分支是master，请使用git push origin master</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="方法-2：通过-GitHub-网页界面（适用于文件较少的情况）"><a href="#方法-2：通过-GitHub-网页界面（适用于文件较少的情况）" class="headerlink" title="方法 2：通过 GitHub 网页界面（适用于文件较少的情况）"></a>方法 2：通过 GitHub 网页界面（适用于文件较少的情况）</h3><ol>
+<li>进入你的 GitHub 仓库页面</li>
+<li>点击仓库中的文件或文件夹</li>
+<li>对于每个文件，点击右侧的删除按钮（垃圾桶图标）</li>
+<li>提交更改（填写提交信息后点击 “Commit changes”）</li>
+<li>重复此过程直到删除所有文件</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>清空仓库前请确保你真的需要删除所有文件，建议先备份重要内容</li>
+<li>如果你想完全删除仓库（包括仓库本身），可以在仓库设置中选择 “Delete repository”</li>
+<li>操作后，仓库的提交历史会保留，如果需要彻底清除历史记录，需要进行更复杂的操作</li>
+</ul>
+<p>请谨慎操作，这些操作会永久删除文件，无法轻易恢复。</p>
+
+    </div>
+
+    
+    <div class="post-comments">
+      <!-- 评论区域 -->
+      <p>评论区域</p>
+    </div>
+    
+  
+  <footer class="post-footer">
+    <div class="post-copyright">
+      <p>作者: TZ-XIAOO</p>
+      <p>许可协议: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></p>
+    </div>
+  </footer>
+  
+</article>
+
+<style>
+.post-container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-cover {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 42.55%; /* 2.35:1 比例 */
+  position: relative;
+}
+
+.post-cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.post-header {
+  margin-bottom: 30px;
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.post-meta .post-top {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+.post-meta .post-date {
+  margin-right: 20px;
+}
+
+.post-meta .post-category a {
+  color: #1abc9c;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.post-meta .post-category a:hover {
+  text-decoration: underline;
+}
+
+.post-meta .post-tags a {
+  color: #3498db;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.post-meta .post-tags a:hover {
+  text-decoration: underline;
+}
+
+.post-protected {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.password-hint {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.password-form input[type="password"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.password-form button {
+  padding: 8px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.password-form button:hover {
+  background-color: #555;
+}
+
+.password-error {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.post-content {
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.post-comments {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.post-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.post-copyright {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+</style>
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="quote">⇖且停且忘且随风 · 且行且看且从容⇗</p>
+            <hr class="divider">
+            <p class="author">TZ-XIAOO</p>
+            
+                <p class="copyright">© 2025 隅烬主题</p>
+            
+            
+                <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
+            
+        </div>
+    </footer>
+</body>
+
+</html>
