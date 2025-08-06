@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TZ隅烬</title>
+    <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="navbar-left">
+                <div class="logo" style="width: 48px; height: 48px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;"></div>
+                <div class="title-container">
+                    <span class="main-title">TZ隅烬</span>
+                    <span class="subtitle">在荒寂处黯燃</span>
+                </div>
+            </a>
+            
+            <div class="navbar-right">
+                
+                    
+                        <a href="/" class="nav-item">OvO</a>
+                    
+                        <a href="/mulinsen/" class="nav-item">木林森</a>
+                    
+                        <a href="/bbd/" class="nav-item">逼逼叨</a>
+                    
+                        <a href="/nayuanfang/" class="nav-item">那远方</a>
+                    
+                        <a href="/about/" class="nav-item">碎碎念</a>
+                    
+                
+                
+                    <button class="search-btn" aria-label="搜索">
+                        <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z"></path>
+                        </svg>
+                    </button>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <div class="main-content">
+        <div class="container">
+            <article class="page-container">
+  <header class="page-header">
+    
+  </header>
+
+  <div class="page-content">
+    <h1 id="逼逼叨内容管理说明"><a href="#逼逼叨内容管理说明" class="headerlink" title="逼逼叨内容管理说明"></a>逼逼叨内容管理说明</h1><h2 id="功能特性"><a href="#功能特性" class="headerlink" title="功能特性"></a>功能特性</h2><ol>
+<li><strong>自动时间创建</strong>：添加新内容时自动记录创建时间</li>
+<li><strong>时间显示</strong>：在页面上显示内容的发布时间</li>
+<li><strong>时间一致性</strong>：显示时间与创建时间保持一致，不可手动修改</li>
+<li><strong>创建时间追踪</strong>：保留内容的原始创建时间</li>
+</ol>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;posts&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;date&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2022-04-18&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;time&quot;</span><span class="punctuation">:</span> <span class="string">&quot;15:30&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;created_at&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2022-04-18 15:30&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;content&quot;</span><span class="punctuation">:</span> <span class="string">&quot;内容文本&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;photos&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;图片URL列表&quot;</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><ul>
+<li><code>id</code>：内容唯一标识符，自动递增</li>
+<li><code>date</code>：内容显示日期，与创建时间一致，不可手动修改</li>
+<li><code>time</code>：内容显示时间，与创建时间一致，不可手动修改</li>
+<li><code>created_at</code>：内容创建时间，自动记录，不可修改</li>
+<li><code>content</code>：内容文本</li>
+<li><code>photos</code>：图片URL数组</li>
+</ul>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="添加新内容"><a href="#添加新内容" class="headerlink" title="添加新内容"></a>添加新内容</h3><p>使用辅助函数添加新内容：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加纯文本内容</span></span><br><span class="line"><span class="title function_">add_bbd_post</span>(<span class="string">&quot;今天是个好日子&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加带图片的内容</span></span><br><span class="line"><span class="title function_">add_bbd_post</span>(<span class="string">&quot;今天的 sunset 太美了&quot;</span>, [<span class="string">&quot;图片URL1&quot;</span>, <span class="string">&quot;图片URL2&quot;</span>]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除内容"><a href="#删除内容" class="headerlink" title="删除内容"></a>删除内容</h3><p>使用辅助函数删除指定内容：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 删除ID为1的内容</span></span><br><span class="line"><span class="title function_">remove_bbd_post</span>(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>所有时间均使用24小时制</li>
+<li>日期格式为 YYYY-MM-DD</li>
+<li>时间格式为 HH:mm</li>
+<li>创建时间在内容创建时自动生成，无法手动修改</li>
+<li>显示的日期和时间与创建时间保持一致，不可手动修改</li>
+<li>如果需要修改内容的时间，需要通过重新创建内容的方式实现</li>
+</ol>
+
+  </div>
+</article>
+
+<style>
+.page-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.page-content {
+  line-height: 1.8;
+  color: #333;
+}
+</style>
+        </div>
+    </div>
+    
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="quote">⇖且停且忘且随风 · 且行且看且从容⇗</p>
+            <hr class="divider">
+            <p class="author">TZ-XIAOO</p>
+            
+                <p class="copyright">© 2025 隅烬主题</p>
+            
+            
+                <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
+            
+        </div>
+    </footer>
+</body>
+
+</html>
