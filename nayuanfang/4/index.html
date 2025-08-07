@@ -59,14 +59,10 @@
     
     
         <div class="photo-gallery">
-            <div class="masonry-layout">
+            <div class="photos-flex">
                 
-                    <div class="masonry-item">
-                        <img src="/images/album4-1.jpg" alt="Photo" />
-                    </div>
-                
-                    <div class="masonry-item">
-                        <img src="/images/album4-2.jpg" alt="Photo" />
+                    <div class="photo-item">
+                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="Photo" />
                     </div>
                 
             </div>
@@ -120,19 +116,19 @@
     color: #333;
 }
 
-.masonry-layout {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 15px;
-    grid-auto-rows: 10px;
+.photos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.masonry-item {
-    break-inside: avoid;
-    margin-bottom: 15px;
+.photo-item {
+    flex: 1 1 250px;
+    max-width: 250px;
 }
 
-.masonry-item img {
+.photo-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -140,7 +136,7 @@
     display: block;
 }
 
-.masonry-item img:hover {
+.photo-item img:hover {
     transform: scale(1.03);
 }
 
@@ -198,8 +194,13 @@
 }
 
 @media (max-width: 768px) {
-    .masonry-layout {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    .photos-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .photo-item {
+        max-width: 100%;
     }
     
     .album-detail-container {

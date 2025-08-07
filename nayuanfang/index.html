@@ -56,48 +56,59 @@
     
     
     <!-- 主页 -->
-    <div class="posts-grid">
+    <div class="posts-flex">
     
         <div class="post-item">
             <a href="/nayuanfang/1/">
-                <div class="post-cover" style="background-color: #eee;"></div>
+                <div class="post-cover" style="background-image: url('https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg');"></div>
                 <div class="post-info">
-                    <h2 class="post-title">春日踏青</h2>
+                    <h2 class="post-title">蜜月旅行</h2>
                     <div class="title-divider"></div>
-                    <div class="post-date">2022-04-10</div>
+                    <div class="post-date">2024-01-04</div>
                 </div>
             </a>
         </div>
         
         <div class="post-item">
             <a href="/nayuanfang/2/">
-                <div class="post-cover" style="background-color: #eee;"></div>
+                <div class="post-cover" style="background-image: url('https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp');"></div>
                 <div class="post-info">
-                    <h2 class="post-title">夏日海滩</h2>
+                    <h2 class="post-title">婚礼纪念</h2>
                     <div class="title-divider"></div>
-                    <div class="post-date">2022-04-12</div>
+                    <div class="post-date">2023-12-30</div>
                 </div>
             </a>
         </div>
         
         <div class="post-item">
             <a href="/nayuanfang/3/">
-                <div class="post-cover" style="background-color: #eee;"></div>
+                <div class="post-cover" style="background-image: url('/images/album1.jpg');"></div>
                 <div class="post-info">
-                    <h2 class="post-title">秋日红叶</h2>
+                    <h2 class="post-title">昆明之行</h2>
                     <div class="title-divider"></div>
-                    <div class="post-date">2022-04-15</div>
+                    <div class="post-date">2023-07-15</div>
                 </div>
             </a>
         </div>
         
         <div class="post-item">
             <a href="/nayuanfang/4/">
-                <div class="post-cover" style="background-color: #eee;"></div>
+                <div class="post-cover" style="background-image: url('/images/album4.jpg');"></div>
                 <div class="post-info">
                     <h2 class="post-title">冬日雪景</h2>
                     <div class="title-divider"></div>
                     <div class="post-date">2022-04-18</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="post-item">
+            <a href="/nayuanfang/5/">
+                <div class="post-cover" style="background-image: url('/images/album3.jpg');"></div>
+                <div class="post-info">
+                    <h2 class="post-title">秋日红叶</h2>
+                    <div class="title-divider"></div>
+                    <div class="post-date">2022-04-15</div>
                 </div>
             </a>
         </div>
@@ -126,14 +137,17 @@
     color: #666;
 }
 
-.posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+.posts-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 30px;
 }
 
 .post-item {
+    flex: 1 1 280px;
+    max-width: 280px;
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
@@ -180,6 +194,10 @@
 @media (max-width: 768px) {
     .gallery-container {
         padding: 10px;
+    }
+    
+    .post-item {
+        max-width: 100%;
     }
     
     .post-title {
