@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <title>TZ隅烬</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/obsidian.min.css" rel="stylesheet">
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
@@ -13,38 +15,43 @@
     <nav class="navbar">
         <div class="container">
             <a href="/" class="navbar-left">
-                <div class="logo" style="width: 56px; height: 56px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;"></div>
+                <div class="logo"
+                    style="width: 56px; height: 56px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;">
+                </div>
                 <div class="title-container">
                     <span class="main-title">TZ隅烬</span>
                     <span class="subtitle">在荒寂处黯燃</span>
                 </div>
             </a>
-            
+
             <div class="navbar-right">
                 
-                    
-                        <a href="/" class="nav-item">OvO</a>
-                    
-                        <a href="/mulinsen/" class="nav-item">木林森</a>
-                    
-                        <a href="/bbd/" class="nav-item">逼逼叨</a>
-                    
-                        <a href="/nayuanfang/" class="nav-item">那远方</a>
-                    
-                        <a href="/about/" class="nav-item">碎碎念</a>
-                    
+                
+                <a href="/" class="nav-item">OvO</a>
+                
+                <a href="/mulinsen/" class="nav-item">木林森</a>
+                
+                <a href="/bbd/" class="nav-item">逼逼叨</a>
+                
+                <a href="/nayuanfang/" class="nav-item">那远方</a>
+                
+                <a href="/about/" class="nav-item">碎碎念</a>
                 
                 
-                    <button class="search-btn" aria-label="搜索">
-                        <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z"></path>
-                        </svg>
-                    </button>
+                
+                <button class="search-btn" aria-label="搜索">
+                    <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z">
+                        </path>
+                    </svg>
+                </button>
                 
             </div>
         </div>
     </nav>
-    
+
     <div class="main-content">
         <div class="container">
             <article class="page-container">
@@ -59,7 +66,7 @@
 <li><strong>时间一致性</strong>：显示时间与创建时间保持一致，不可手动修改</li>
 <li><strong>创建时间追踪</strong>：保留内容的原始创建时间</li>
 </ol>
-<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;posts&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;date&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2022-04-18&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;time&quot;</span><span class="punctuation">:</span> <span class="string">&quot;15:30&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;created_at&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2022-04-18 15:30&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;content&quot;</span><span class="punctuation">:</span> <span class="string">&quot;内容文本&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;photos&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;图片URL列表&quot;</span><span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><figure class="highlight json"><table><tr><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-attr">&quot;posts&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;date&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;2022-04-18&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;time&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;15:30&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;created_at&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;2022-04-18 15:30&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;content&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;内容文本&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;photos&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-string">&quot;图片URL列表&quot;</span><span class="hljs-punctuation">]</span><br>    <span class="hljs-punctuation">&#125;</span><br>  <span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 
 <h2 id="字段说明"><a href="#字段说明" class="headerlink" title="字段说明"></a>字段说明</h2><ul>
 <li><code>id</code>：内容唯一标识符，自动递增</li>
@@ -70,10 +77,10 @@
 <li><code>photos</code>：图片URL数组</li>
 </ul>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="添加新内容"><a href="#添加新内容" class="headerlink" title="添加新内容"></a>添加新内容</h3><p>使用辅助函数添加新内容：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 添加纯文本内容</span></span><br><span class="line"><span class="title function_">add_bbd_post</span>(<span class="string">&quot;今天是个好日子&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 添加带图片的内容</span></span><br><span class="line"><span class="title function_">add_bbd_post</span>(<span class="string">&quot;今天的 sunset 太美了&quot;</span>, [<span class="string">&quot;图片URL1&quot;</span>, <span class="string">&quot;图片URL2&quot;</span>]);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 添加纯文本内容</span><br><span class="hljs-title function_">add_bbd_post</span>(<span class="hljs-string">&quot;今天是个好日子&quot;</span>);<br><br><span class="hljs-comment">// 添加带图片的内容</span><br><span class="hljs-title function_">add_bbd_post</span>(<span class="hljs-string">&quot;今天的 sunset 太美了&quot;</span>, [<span class="hljs-string">&quot;图片URL1&quot;</span>, <span class="hljs-string">&quot;图片URL2&quot;</span>]);<br></code></pre></td></tr></table></figure>
 
 <h3 id="删除内容"><a href="#删除内容" class="headerlink" title="删除内容"></a>删除内容</h3><p>使用辅助函数删除指定内容：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 删除ID为1的内容</span></span><br><span class="line"><span class="title function_">remove_bbd_post</span>(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 删除ID为1的内容</span><br><span class="hljs-title function_">remove_bbd_post</span>(<span class="hljs-number">1</span>);<br></code></pre></td></tr></table></figure>
 
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
 <li>所有时间均使用24小时制</li>
@@ -112,7 +119,7 @@
 </style>
         </div>
     </div>
-    
+
     <!-- 底部 -->
     <footer class="footer">
         <div class="container">
@@ -120,16 +127,20 @@
             <hr class="divider">
             <p class="author">TZ-XIAOO</p>
             
-                <p class="copyright">© 2025 隅烬主题</p>
+            <p class="copyright">© 2025 隅烬主题</p>
             
             
-                <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
+            <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
             
         </div>
     </footer>
-    
+
     <!-- 搜索功能 JavaScript -->
     <script src="/js/search.js"></script>
+    <script src="https://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 
 </html>

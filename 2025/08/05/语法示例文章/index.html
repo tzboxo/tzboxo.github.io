@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <title>TZ隅烬</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/obsidian.min.css" rel="stylesheet">
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
@@ -13,38 +15,43 @@
     <nav class="navbar">
         <div class="container">
             <a href="/" class="navbar-left">
-                <div class="logo" style="width: 56px; height: 56px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;"></div>
+                <div class="logo"
+                    style="width: 56px; height: 56px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;">
+                </div>
                 <div class="title-container">
                     <span class="main-title">TZ隅烬</span>
                     <span class="subtitle">在荒寂处黯燃</span>
                 </div>
             </a>
-            
+
             <div class="navbar-right">
                 
-                    
-                        <a href="/" class="nav-item">OvO</a>
-                    
-                        <a href="/mulinsen/" class="nav-item">木林森</a>
-                    
-                        <a href="/bbd/" class="nav-item">逼逼叨</a>
-                    
-                        <a href="/nayuanfang/" class="nav-item">那远方</a>
-                    
-                        <a href="/about/" class="nav-item">碎碎念</a>
-                    
+                
+                <a href="/" class="nav-item">OvO</a>
+                
+                <a href="/mulinsen/" class="nav-item">木林森</a>
+                
+                <a href="/bbd/" class="nav-item">逼逼叨</a>
+                
+                <a href="/nayuanfang/" class="nav-item">那远方</a>
+                
+                <a href="/about/" class="nav-item">碎碎念</a>
                 
                 
-                    <button class="search-btn" aria-label="搜索">
-                        <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z"></path>
-                        </svg>
-                    </button>
+                
+                <button class="search-btn" aria-label="搜索">
+                    <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z">
+                        </path>
+                    </svg>
+                </button>
                 
             </div>
         </div>
     </nav>
-    
+
     <div class="main-content">
         <div class="container">
             
@@ -132,10 +139,10 @@
 <li><p>下载最新稳定版（当前推荐3.11+）</p>
 </li>
 <li><p>运行安装程序：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Linux/macOS安装示例</span></span><br><span class="line">$ ./configure --enable-optimizations</span><br><span class="line">$ make</span><br><span class="line">$ <span class="built_in">sudo</span> make install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Linux/macOS安装示例</span><br>$ ./configure --enable-optimizations<br>$ make<br>$ <span class="hljs-built_in">sudo</span> make install<br></code></pre></td></tr></table></figure>
 </li>
 <li><p>验证安装：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> sys</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(sys.version)</span><br><span class="line"><span class="number">3.11</span><span class="number">.4</span> (main, Jun <span class="number">20</span> <span class="number">2023</span>, <span class="number">17</span>:<span class="number">23</span>:<span class="number">00</span>)</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">import</span> sys<br><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(sys.version)<br><span class="hljs-number">3.11</span><span class="hljs-number">.4</span> (main, Jun <span class="hljs-number">20</span> <span class="hljs-number">2023</span>, <span class="hljs-number">17</span>:<span class="hljs-number">23</span>:<span class="hljs-number">00</span>)<br></code></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="2-推荐工具"><a href="#2-推荐工具" class="headerlink" title="2. 推荐工具"></a>2. 推荐工具</h3><ul>
 <li>IDE选择：<ul>
@@ -153,16 +160,16 @@
 </ul>
 <blockquote>
 <p>⚠️ <strong>注意</strong>：使用虚拟环境避免包冲突：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ python -m venv myenv</span><br><span class="line">$ <span class="built_in">source</span> myenv/bin/activate</span><br></pre></td></tr></table></figure></blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ python -m venv myenv<br>$ <span class="hljs-built_in">source</span> myenv/bin/activate<br></code></pre></td></tr></table></figure></blockquote>
 <hr>
-<h2 id="四、基础语法精要"><a href="#四、基础语法精要" class="headerlink" title="四、基础语法精要"></a>四、基础语法精要</h2><h3 id="1-数据类型与操作"><a href="#1-数据类型与操作" class="headerlink" title="1. 数据类型与操作"></a>1. 数据类型与操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 基本数据类型</span></span><br><span class="line">int_var = <span class="number">42</span>            <span class="comment"># 整数</span></span><br><span class="line">float_var = <span class="number">3.14</span>        <span class="comment"># 浮点数 </span></span><br><span class="line">str_var = <span class="string">&quot;Hello&quot;</span>       <span class="comment"># 字符串</span></span><br><span class="line">bool_var = <span class="literal">True</span>         <span class="comment"># 布尔值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 复合数据类型</span></span><br><span class="line">list_var = [<span class="number">1</span>, <span class="number">2</span>, <span class="string">&#x27;a&#x27;</span>]  <span class="comment"># 列表（可变）</span></span><br><span class="line">tuple_var = (<span class="number">5</span>, <span class="string">&#x27;b&#x27;</span>)    <span class="comment"># 元组（不可变）</span></span><br><span class="line">dict_var = &#123;<span class="string">&#x27;key&#x27;</span>: <span class="string">&#x27;value&#x27;</span>&#125;  <span class="comment"># 字典</span></span><br></pre></td></tr></table></figure>
+<h2 id="四、基础语法精要"><a href="#四、基础语法精要" class="headerlink" title="四、基础语法精要"></a>四、基础语法精要</h2><h3 id="1-数据类型与操作"><a href="#1-数据类型与操作" class="headerlink" title="1. 数据类型与操作"></a>1. 数据类型与操作</h3><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 基本数据类型</span><br>int_var = <span class="hljs-number">42</span>            <span class="hljs-comment"># 整数</span><br>float_var = <span class="hljs-number">3.14</span>        <span class="hljs-comment"># 浮点数 </span><br>str_var = <span class="hljs-string">&quot;Hello&quot;</span>       <span class="hljs-comment"># 字符串</span><br>bool_var = <span class="hljs-literal">True</span>         <span class="hljs-comment"># 布尔值</span><br><br><span class="hljs-comment"># 复合数据类型</span><br>list_var = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">&#x27;a&#x27;</span>]  <span class="hljs-comment"># 列表（可变）</span><br>tuple_var = (<span class="hljs-number">5</span>, <span class="hljs-string">&#x27;b&#x27;</span>)    <span class="hljs-comment"># 元组（不可变）</span><br>dict_var = &#123;<span class="hljs-string">&#x27;key&#x27;</span>: <span class="hljs-string">&#x27;value&#x27;</span>&#125;  <span class="hljs-comment"># 字典</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="2-控制结构"><a href="#2-控制结构" class="headerlink" title="2. 控制结构"></a>2. 控制结构</h3><h4 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">score = <span class="number">85</span></span><br><span class="line"><span class="keyword">if</span> score &gt;= <span class="number">90</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;优秀&quot;</span>)</span><br><span class="line"><span class="keyword">elif</span> score &gt;= <span class="number">60</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;及格&quot;</span>)  <span class="comment"># 输出结果</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;不及格&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="2-控制结构"><a href="#2-控制结构" class="headerlink" title="2. 控制结构"></a>2. 控制结构</h3><h4 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h4><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python">score = <span class="hljs-number">85</span><br><span class="hljs-keyword">if</span> score &gt;= <span class="hljs-number">90</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;优秀&quot;</span>)<br><span class="hljs-keyword">elif</span> score &gt;= <span class="hljs-number">60</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;及格&quot;</span>)  <span class="hljs-comment"># 输出结果</span><br><span class="hljs-keyword">else</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;不及格&quot;</span>)<br></code></pre></td></tr></table></figure>
 
-<h4 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># for循环示例</span></span><br><span class="line"><span class="keyword">for</span> i in <span class="title function_ invoke__">range</span>(<span class="number">5</span>):</span><br><span class="line">    <span class="keyword">print</span>(f<span class="string">&quot;迭代次数: &#123;i+1&#125;&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># while循环</span></span><br><span class="line">count = <span class="number">3</span></span><br><span class="line"><span class="keyword">while</span> count &gt; <span class="number">0</span>:</span><br><span class="line">    <span class="keyword">print</span>(count)</span><br><span class="line">    count -= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<h4 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h4><figure class="highlight php"><table><tr><td class="code"><pre><code class="hljs php"><span class="hljs-comment"># for循环示例</span><br><span class="hljs-keyword">for</span> i in <span class="hljs-title function_ invoke__">range</span>(<span class="hljs-number">5</span>):<br>    <span class="hljs-keyword">print</span>(f<span class="hljs-string">&quot;迭代次数: &#123;i+1&#125;&quot;</span>)<br><br><span class="hljs-comment"># while循环</span><br>count = <span class="hljs-number">3</span><br><span class="hljs-keyword">while</span> count &gt; <span class="hljs-number">0</span>:<br>    <span class="hljs-keyword">print</span>(count)<br>    count -= <span class="hljs-number">1</span><br></code></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="五、函数与模块"><a href="#五、函数与模块" class="headerlink" title="五、函数与模块"></a>五、函数与模块</h2><h3 id="1-函数定义"><a href="#1-函数定义" class="headerlink" title="1. 函数定义"></a>1. 函数定义</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calculate_area</span>(<span class="params">radius: <span class="built_in">float</span></span>) -&gt; <span class="built_in">float</span>:</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    计算圆面积</span></span><br><span class="line"><span class="string">    :param radius: 半径</span></span><br><span class="line"><span class="string">    :return: 面积值</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    PI = <span class="number">3.14159</span></span><br><span class="line">    <span class="keyword">return</span> PI * radius**<span class="number">2</span>  <span class="comment"># 半径平方</span></span><br></pre></td></tr></table></figure>
+<h2 id="五、函数与模块"><a href="#五、函数与模块" class="headerlink" title="五、函数与模块"></a>五、函数与模块</h2><h3 id="1-函数定义"><a href="#1-函数定义" class="headerlink" title="1. 函数定义"></a>1. 函数定义</h3><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">calculate_area</span>(<span class="hljs-params">radius: <span class="hljs-built_in">float</span></span>) -&gt; <span class="hljs-built_in">float</span>:<br>    <span class="hljs-string">&quot;&quot;&quot;</span><br><span class="hljs-string">    计算圆面积</span><br><span class="hljs-string">    :param radius: 半径</span><br><span class="hljs-string">    :return: 面积值</span><br><span class="hljs-string">    &quot;&quot;&quot;</span><br>    PI = <span class="hljs-number">3.14159</span><br>    <span class="hljs-keyword">return</span> PI * radius**<span class="hljs-number">2</span>  <span class="hljs-comment"># 半径平方</span><br></code></pre></td></tr></table></figure>
 
 <h3 id="2-常用标准库"><a href="#2-常用标准库" class="headerlink" title="2. 常用标准库"></a>2. 常用标准库</h3><ul>
 <li><code>os</code> - 操作系统接口</li>
@@ -172,11 +179,11 @@
 </ul>
 <blockquote>
 <p>📌 <strong>提示</strong>：使用<code>pip</code>管理第三方包：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装requests库</span></span><br><span class="line">$ pip install requests</span><br></pre></td></tr></table></figure></blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 安装requests库</span><br>$ pip install requests<br></code></pre></td></tr></table></figure></blockquote>
 <hr>
-<h2 id="六、进阶概念"><a href="#六、进阶概念" class="headerlink" title="六、进阶概念"></a>六、进阶概念</h2><h3 id="1-面向对象编程"><a href="#1-面向对象编程" class="headerlink" title="1. 面向对象编程"></a>1. 面向对象编程</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Animal</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, name</span>):</span><br><span class="line">        <span class="variable language_">self</span>.name = name</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">raise</span> NotImplementedError(<span class="string">&quot;子类必须实现此方法&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>(<span class="title class_ inherited__">Animal</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;汪汪！&quot;</span></span><br><span class="line"></span><br><span class="line">buddy = Dog(<span class="string">&quot;Buddy&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(buddy.speak())  <span class="comment"># 输出: 汪汪！</span></span><br></pre></td></tr></table></figure>
+<h2 id="六、进阶概念"><a href="#六、进阶概念" class="headerlink" title="六、进阶概念"></a>六、进阶概念</h2><h3 id="1-面向对象编程"><a href="#1-面向对象编程" class="headerlink" title="1. 面向对象编程"></a>1. 面向对象编程</h3><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span>:<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">__init__</span>(<span class="hljs-params">self, name</span>):<br>        <span class="hljs-variable language_">self</span>.name = name<br>    <br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">speak</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-keyword">raise</span> NotImplementedError(<span class="hljs-string">&quot;子类必须实现此方法&quot;</span>)<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span>(<span class="hljs-title class_ inherited__">Animal</span>):<br>    <span class="hljs-keyword">def</span> <span class="hljs-title function_">speak</span>(<span class="hljs-params">self</span>):<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;汪汪！&quot;</span><br><br>buddy = Dog(<span class="hljs-string">&quot;Buddy&quot;</span>)<br><span class="hljs-built_in">print</span>(buddy.speak())  <span class="hljs-comment"># 输出: 汪汪！</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="2-异常处理"><a href="#2-异常处理" class="headerlink" title="2. 异常处理"></a>2. 异常处理</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    result = <span class="number">10</span> / <span class="number">0</span></span><br><span class="line"><span class="keyword">except</span> ZeroDivisionError <span class="keyword">as</span> e:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;错误发生: <span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;清理操作&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="2-异常处理"><a href="#2-异常处理" class="headerlink" title="2. 异常处理"></a>2. 异常处理</h3><figure class="highlight python"><table><tr><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">try</span>:<br>    result = <span class="hljs-number">10</span> / <span class="hljs-number">0</span><br><span class="hljs-keyword">except</span> ZeroDivisionError <span class="hljs-keyword">as</span> e:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">f&quot;错误发生: <span class="hljs-subst">&#123;e&#125;</span>&quot;</span>)<br><span class="hljs-keyword">finally</span>:<br>    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;清理操作&quot;</span>)<br></code></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="学习路线规划"><a href="#学习路线规划" class="headerlink" title="学习路线规划"></a>学习路线规划</h2><ul>
@@ -231,7 +238,7 @@
 <blockquote>
 <p>版权声明：本文内容遵循 CC-BY-NC 4.0 许可协议</p>
 </blockquote>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">A[基础语法] --&gt; B[函数模块]</span><br><span class="line">B --&gt; C[面向对象]</span><br><span class="line">C --&gt; D[项目实战]</span><br><span class="line">D --&gt; E[专业领域]</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><code class="hljs css">graph LR<br><span class="hljs-selector-tag">A</span><span class="hljs-selector-attr">[基础语法]</span> --&gt; <span class="hljs-selector-tag">B</span><span class="hljs-selector-attr">[函数模块]</span><br><span class="hljs-selector-tag">B</span> --&gt; C<span class="hljs-selector-attr">[面向对象]</span><br>C --&gt; D<span class="hljs-selector-attr">[项目实战]</span><br>D --&gt; E<span class="hljs-selector-attr">[专业领域]</span><br></code></pre></td></tr></table></figure>
 
 <p>通过本指南，您已掌握Python核心概念。<strong>持续实践</strong>是成为Python专家的关键！ 🚀</p>
 
@@ -296,8 +303,8 @@
 .post-meta {
   font-size: 0.9em;
   color: #999;
-  margin-bottom: 20px;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -401,7 +408,7 @@
 </style>
         </div>
     </div>
-    
+
     <!-- 底部 -->
     <footer class="footer">
         <div class="container">
@@ -409,16 +416,20 @@
             <hr class="divider">
             <p class="author">TZ-XIAOO</p>
             
-                <p class="copyright">© 2025 隅烬主题</p>
+            <p class="copyright">© 2025 隅烬主题</p>
             
             
-                <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
+            <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
             
         </div>
     </footer>
-    
+
     <!-- 搜索功能 JavaScript -->
     <script src="/js/search.js"></script>
+    <script src="https://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 
 </html>

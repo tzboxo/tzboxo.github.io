@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <title>TZ隅烬</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/obsidian.min.css" rel="stylesheet">
+
 <meta name="generator" content="Hexo 7.3.0"></head>
 
 <body>
@@ -13,38 +15,43 @@
     <nav class="navbar">
         <div class="container">
             <a href="/" class="navbar-left">
-                <div class="logo" style="width: 56px; height: 56px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;"></div>
+                <div class="logo"
+                    style="width: 56px; height: 56px; background-image: url(https://raw.githubusercontent.com/tzboxo/xiaoo-img/refs/heads/master/img/user3.webp); background-size: cover; background-position: center;">
+                </div>
                 <div class="title-container">
                     <span class="main-title">TZ隅烬</span>
                     <span class="subtitle">在荒寂处黯燃</span>
                 </div>
             </a>
-            
+
             <div class="navbar-right">
                 
-                    
-                        <a href="/" class="nav-item">OvO</a>
-                    
-                        <a href="/mulinsen/" class="nav-item">木林森</a>
-                    
-                        <a href="/bbd/" class="nav-item">逼逼叨</a>
-                    
-                        <a href="/nayuanfang/" class="nav-item">那远方</a>
-                    
-                        <a href="/about/" class="nav-item">碎碎念</a>
-                    
+                
+                <a href="/" class="nav-item">OvO</a>
+                
+                <a href="/mulinsen/" class="nav-item">木林森</a>
+                
+                <a href="/bbd/" class="nav-item">逼逼叨</a>
+                
+                <a href="/nayuanfang/" class="nav-item">那远方</a>
+                
+                <a href="/about/" class="nav-item">碎碎念</a>
                 
                 
-                    <button class="search-btn" aria-label="搜索">
-                        <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z"></path>
-                        </svg>
-                    </button>
+                
+                <button class="search-btn" aria-label="搜索">
+                    <svg class="search-icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1 0-176.4-143.1-319.5-319.5-319.5S134.2 239.8 134.2 416.2s143.1 319.5 319.5 319.5c71.3 0 137.5-21.1 193.1-57.3 2 2.6 3.9 5.4 6.4 7.9l214.4 214.5c14.7 14.7 33.6 22.1 52.6 22.1 19 0 37.9-7.4 52.6-22.1 29.3-29.3 29.3-76.9 0.1-106.1zM453.7 752.7c-131.2 0-238.3-107.1-238.3-238.3s107.1-238.3 238.3-238.3 238.3 107.1 238.3 238.3-107.1 238.3-238.3 238.3z">
+                        </path>
+                    </svg>
+                </button>
                 
             </div>
         </div>
     </nav>
-    
+
     <div class="main-content">
         <div class="container">
             
@@ -62,11 +69,11 @@
             <div class="photos-flex">
                 
                     <div class="photo-item">
-                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="Photo" />
+                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="Photo" data-fancybox="album-photos" />
                     </div>
                 
                     <div class="photo-item">
-                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="Photo" />
+                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="Photo" data-fancybox="album-photos" />
                     </div>
                 
             </div>
@@ -130,6 +137,7 @@
 .photo-item {
     flex: 1 1 250px;
     max-width: 250px;
+    cursor: pointer;
 }
 
 .photo-item img {
@@ -216,9 +224,36 @@
     }
 }
 </style>
+
+<!-- 引入Fancybox库 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化Fancybox
+    Fancybox.bind('[data-fancybox="album-photos"]', {
+        Toolbar: {
+            display: {
+                left: [],
+                middle: [],
+                right: ["close"]
+            },
+        },
+        closeButton: "top",
+        Image: {
+            zoom: true,
+        },
+        on: {
+            initCarousel: function() {
+                // 可以在这里添加初始化逻辑
+            }
+        }
+    });
+});
+</script>
         </div>
     </div>
-    
+
     <!-- 底部 -->
     <footer class="footer">
         <div class="container">
@@ -226,16 +261,20 @@
             <hr class="divider">
             <p class="author">TZ-XIAOO</p>
             
-                <p class="copyright">© 2025 隅烬主题</p>
+            <p class="copyright">© 2025 隅烬主题</p>
             
             
-                <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
+            <p class="powered-by">由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动</p>
             
         </div>
     </footer>
-    
+
     <!-- 搜索功能 JavaScript -->
     <script src="/js/search.js"></script>
+    <script src="https://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
 </body>
 
 </html>
