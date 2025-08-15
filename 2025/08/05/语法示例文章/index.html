@@ -93,7 +93,8 @@
 <p>“简洁胜于复杂，明了胜于晦涩” —— Python之禅</p>
 </blockquote>
 <h2 id="一、Python语言概述"><a href="#一、Python语言概述" class="headerlink" title="一、Python语言概述"></a>一、Python语言概述</h2><p>Python是一种<strong>高级编程语言</strong>，由Guido van Rossum于1991年创建。它以<u>代码可读性</u>和<u>简洁语法</u>著称，支持多种编程范式（面向对象、函数式、命令式）。Python在数据科学、Web开发和自动化领域占据主导地位。<br><img src="https://www.python.org/static/img/python-logo.png" alt="img"></p>
-<h2 id="二、核心特性"><a href="#二、核心特性" class="headerlink" title="二、核心特性"></a>二、核心特性</h2><h3 id="1-语言优势"><a href="#1-语言优势" class="headerlink" title="1. 语言优势"></a>1. 语言优势</h3><ul>
+<h2 id="二、核心特性"><a href="#二、核心特性" class="headerlink" title="二、核心特性"></a>二、核心特性</h2><p><img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="img"></p>
+<h3 id="1-语言优势"><a href="#1-语言优势" class="headerlink" title="1. 语言优势"></a>1. 语言优势</h3><ul>
 <li>✅ 简洁优雅的语法结构</li>
 <li>✅ 跨平台兼容性（Windows&#x2F;macOS&#x2F;Linux）</li>
 <li>✅ 强大的标准库和第三方包</li>
@@ -265,6 +266,7 @@
   max-width: 860px;
   margin: 0 auto;
   padding: 20px;
+  font-family: var(--title-font);
 }
 
 .post-cover {
@@ -385,6 +387,25 @@
   line-height: 1.8;
   color: #333;
   margin-bottom: 40px;
+}
+
+/* 添加文章内容区域样式，确保内容不超过容器宽度 */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.post-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.post-content table {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
 }
 
 .post-comments {

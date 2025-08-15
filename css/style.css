@@ -5,8 +5,16 @@
     box-sizing: border-box;
 }
 
+/* 使用字节跳动的字体 CDN 服务，加载更快速 */
+@import url('https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/noto-serif-sc/2.001/noto-serif-sc-chinese-simplified.css');
+
+/* 为更好的字体加载体验设置默认字体 */
+:root {
+    --title-font: 'Noto Serif SC', 'Source Han Serif SC', '思源宋体', '宋体', serif;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--title-font);
     line-height: 1.6;
     color: #333;
     background-color: #fff;
@@ -187,7 +195,7 @@ a:hover {
 
 .post-title {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 900;
     color: #333;
     margin-bottom: 15px; /* 统一间距 */
     max-height: 54px; /* 两行高度 */
@@ -474,4 +482,7 @@ a:hover {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+strong{
+    font-weight: 700;
 }

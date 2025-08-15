@@ -124,6 +124,7 @@
   max-width: 860px;
   margin: 0 auto;
   padding: 20px;
+  font-family: var(--title-font);
 }
 
 .post-cover {
@@ -244,6 +245,25 @@
   line-height: 1.8;
   color: #333;
   margin-bottom: 40px;
+}
+
+/* 添加文章内容区域样式，确保内容不超过容器宽度 */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.post-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.post-content table {
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
 }
 
 .post-comments {
