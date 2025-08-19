@@ -4,7 +4,23 @@
   font-display: swap;
   src: url('//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/noto-serif-sc/2.001/NotoSerifSC-Regular.otf') format('opentype');
 }
-
+:root { 
+    --text-font-family:'Noto Serif SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    /* 颜色变量 */
+    --theme-color: var(--text-color-100);
+    --text-color-100: rgba(32,36,37,1);
+    --text-color-80: rgba(32,36,37,.8);
+    --text-color-60: rgba(32,36,37,.6);
+    --text-color-40: rgba(32,36,37,.4);
+    --text-color-20: rgba(32,36,37,.2);
+    --text-color-10: rgba(32,36,37,.1);
+    --color-white: #fff;
+    --color-red: #ff4d4f;
+    --color-blue: #1890ff;
+    --color-green: #52c41a;
+    --color-yellow: #fadb14;
+    --color-gray: #f0f0f0;
+}
 /* 重置默认样式 */
 * {
     margin: 0;
@@ -13,19 +29,19 @@
 }
 
 body {
-    font-family: 'Noto Serif SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: var(--text-font-family);
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color-100);
     background-color: #fff;
 }
 
 a {
-    color: #333;
+    color: var(--text-color-100);
     text-decoration: none;
 }
 
 a:hover {
-    color: #666;
+    color: var(--text-color-60);
 }
 
 .container {
@@ -68,7 +84,7 @@ a:hover {
 .logo {
     width: 40px;
     height: 40px;
-    background-color: #333;
+    background-color: var(--text-color-100);
     margin-right: 10px;
 }
 
@@ -80,7 +96,7 @@ a:hover {
 .main-title {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color-100);
 }
 
 .subtitle {
@@ -97,7 +113,7 @@ a:hover {
 .nav-item {
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: var(--text-color-100);
     font-size: 14px;
 }
 
@@ -119,7 +135,7 @@ a:hover {
 .search-icon {
     width: 100%;
     height: 100%;
-    fill: #333;
+    fill: var(--text-color-100);
 }
 
 .search-icon:hover {
@@ -143,7 +159,7 @@ a:hover {
     font-size: 2.5em;
     margin-bottom: 40px;
     text-align: center;
-    color: #333;
+    color: var(--text-color-100);
 }
 
 /* 网格布局样式 */
@@ -195,7 +211,7 @@ a:hover {
 .post-title {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color-100);
     margin-bottom: 15px; /* 统一间距 */
     max-height: 54px; /* 两行高度 */
     overflow: hidden;
@@ -232,7 +248,7 @@ a:hover {
     display: inline-block;
     padding: 8px 15px;
     text-decoration: none;
-    color: #333;
+    color: var(--text-color-100);
     border: 1px solid #ddd;
     border-radius: 3px;
 }
@@ -242,9 +258,9 @@ a:hover {
 }
 
 .pagination .current {
-    background-color: #333;
+    background-color: var(--text-color-100);
     color: #fff;
-    border-color: #333;
+    border-color: var(--text-color-100);
 }
 
 .pagination .space {
@@ -328,7 +344,7 @@ a:hover {
 
 .search-result-title {
     font-weight: bold;
-    color: #333;
+    color: var(--text-color-100);
     text-decoration: none;
 }
 
@@ -391,7 +407,7 @@ a:hover {
 }
 
 .powered-by a:hover {
-    color: #333;
+    color: var(--text-color-100);
 }
 
 /* 响应式设计 */
@@ -510,12 +526,12 @@ a:hover {
 
 .post-content h1:before {
     counter-increment: h1-counter;
-    content: counter(h1-counter, cjk-ideographic) "、 ";
+    content: counter(h1-counter, cjk-ideographic) "、";
 }
 
 .post-content h2:before {
     counter-increment: h2-counter;
-    content: "(" counter(h2-counter, cjk-ideographic) ")、 ";
+    content: "(" counter(h2-counter, cjk-ideographic) ")、";
 }
 
 .post-content h3:before {
@@ -525,7 +541,7 @@ a:hover {
 
 .post-content h4:before {
     counter-increment: h4-counter;
-    content: "(" counter(h4-counter) ")、 ";
+    content: "(" counter(h4-counter) ")、";
 }
 
 .post-content h5:before {
