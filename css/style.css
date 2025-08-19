@@ -1,3 +1,10 @@
+/* 思源宋体字体引用 */
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-display: swap;
+  src: url('//lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/noto-serif-sc/2.001/NotoSerifSC-Regular.otf') format('opentype');
+}
+
 /* 重置默认样式 */
 * {
     margin: 0;
@@ -6,7 +13,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Noto Serif SC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #fff;
@@ -474,4 +481,59 @@ a:hover {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 文章内容标题自动编号样式 */
+.post-content {
+    counter-reset: h1-counter;
+}
+
+.post-content h1 {
+    counter-reset: h2-counter;
+}
+
+.post-content h2 {
+    counter-reset: h3-counter;
+}
+
+.post-content h3 {
+    counter-reset: h4-counter;
+}
+
+.post-content h4 {
+    counter-reset: h5-counter;
+}
+
+.post-content h5 {
+    counter-reset: h6-counter;
+}
+
+.post-content h1:before {
+    counter-increment: h1-counter;
+    content: counter(h1-counter, cjk-ideographic) "、 ";
+}
+
+.post-content h2:before {
+    counter-increment: h2-counter;
+    content: "(" counter(h2-counter, cjk-ideographic) ")、 ";
+}
+
+.post-content h3:before {
+    counter-increment: h3-counter;
+    content: counter(h3-counter) ". ";
+}
+
+.post-content h4:before {
+    counter-increment: h4-counter;
+    content: "(" counter(h4-counter) ")、 ";
+}
+
+.post-content h5:before {
+    counter-increment: h5-counter;
+    content: counter(h5-counter, upper-alpha) ". ";
+}
+
+.post-content h6:before {
+    counter-increment: h6-counter;
+    content: counter(h6-counter, lower-alpha) ". ";
 }

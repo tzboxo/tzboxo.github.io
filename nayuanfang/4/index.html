@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>TZ隅烬</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/obsidian.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/highlight.js/8.0/styles/github.min.css" rel="stylesheet">
 
 <meta name="generator" content="Hexo 7.3.0"></head>
 
@@ -59,9 +59,9 @@
 
 <div class="album-detail-container">
     <div class="album-header">
-        <h1 class="album-title">冬日雪景</h1>
-        <p class="album-date">2022-04-18</p>
-        <p class="album-description">雪花纷飞的日子里，世界变得银装素裹。</p>
+        <h1 class="album-title">昆明之行</h1>
+        <p class="album-date">2023-07-15</p>
+        <p class="album-description">春天来了，万物复苏，一起去郊外踏青吧。</p>
     </div>
     
     
@@ -69,7 +69,17 @@
             <div class="photos-flex">
                 
                     <div class="photo-item">
-                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/page-mingling.jpg" alt="Photo" data-fancybox="album-photos" />
+                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/拎包的小仙女.png" alt="Photo" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPuWbvueJh+WKoOi9veWksei0pTwvdGV4dD48L3N2Zz4=';" data-fancybox="album-photos" />
+                        
+                            <div class="photo-caption">今天的小仙女,我爱的小土豆</div>
+                        
+                    </div>
+                
+                    <div class="photo-item">
+                        <img src="https://raw.githubusercontent.com/tzboxo/xiaoo-img/master/img/皮卡丘.png" alt="Photo" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUwIiBoZWlnaHQ9IjI1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPuWbvueJh+WKoOi9veWksei0pTwvdGV4dD48L3N2Zz4=';" data-fancybox="album-photos" />
+                        
+                            <div class="photo-caption">可爱的皮卡丘</div>
+                        
                     </div>
                 
             </div>
@@ -134,6 +144,7 @@
     flex: 1 1 250px;
     max-width: 250px;
     cursor: pointer;
+    position: relative;
 }
 
 .photo-item img {
@@ -142,10 +153,31 @@
     border-radius: 8px;
     transition: transform 0.3s ease;
     display: block;
+    min-height: 150px;
+    object-fit: cover;
 }
 
 .photo-item img:hover {
     transform: scale(1.03);
+}
+
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-item:hover .photo-caption {
+    opacity: 1;
 }
 
 .back-link {
