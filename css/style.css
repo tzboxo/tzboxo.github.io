@@ -101,7 +101,7 @@ a:hover {
 
 .subtitle {
     font-size: 12px;
-    color: #999;
+    color: var(--text-color-40);
 }
 
 .navbar-right {
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .nav-item:hover {
-    color: #666;
+    color: var(--text-color-60);
 }
 
 .search-btn {
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .search-icon:hover {
-    fill: #666;
+    fill: var(--text-color-60);
 }
 
 /* 主体内容需要添加顶部边距，避免被导航栏遮挡 */
@@ -196,7 +196,7 @@ a:hover {
     padding-bottom: 100%; /* 创建1:1方形 */
     background-size: cover;
     background-position: center;
-    background-color: #eee;
+    background-color: var(--color-gray);
 }
 
 .default-cover {
@@ -224,13 +224,13 @@ a:hover {
 .title-divider {
     width: 60px;
     height: 1px;
-    background-color: #ddd;
+    background-color: var(--text-color-10);
     margin: 0 auto 15px; /* 居中显示，统一间距 */
 }
 
 .post-date {
     font-size: 14px;
-    color: #999;
+    color: var(--text-color-20);
     margin-top: 0; /* 确保顶部无额外间距 */
 }
 
@@ -249,12 +249,12 @@ a:hover {
     padding: 8px 15px;
     text-decoration: none;
     color: var(--text-color-100);
-    border: 1px solid #ddd;
+    border: 1px solid var(--text-color-10);
     border-radius: 3px;
 }
 
 .pagination a:hover {
-    background-color: #f5f5f5;
+    background-color: var(--color-gray);
 }
 
 .pagination .current {
@@ -264,7 +264,7 @@ a:hover {
 }
 
 .pagination .space {
-    color: #ccc;
+    color: var(--color-gray);
 }
 
 .pagination .prev {
@@ -281,7 +281,7 @@ a:hover {
 
 .no-posts {
     text-align: center;
-    color: #999;
+    color: var(--text-color-20);
     font-size: 16px;
     padding: 40px 0;
 }
@@ -293,7 +293,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: var(--text-color-80);
     display: none;
     z-index: 2000;
 }
@@ -317,7 +317,7 @@ a:hover {
 .search-input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #ddd;
+    border: 2px solid var(--text-color-10);
     border-radius: 3px;
     font-size: 16px;
     outline: none;
@@ -335,7 +335,7 @@ a:hover {
 
 .search-result-item {
     padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--text-color-10);
 }
 
 .search-result-item:last-child {
@@ -349,18 +349,18 @@ a:hover {
 }
 
 .search-result-title:hover {
-    color: #666;
+    color: var(--text-color-60);
 }
 
 .search-result-content {
-    color: #999;
+    color: var(--text-color-20);
     font-size: 14px;
     margin-top: 5px;
 }
 
 .search-result-empty {
     text-align: center;
-    color: #999;
+    color: var(--text-color-20);
     padding: 20px;
 }
 
@@ -368,12 +368,12 @@ a:hover {
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: var(--color-gray);
 }
 
 .quote {
     font-size: 24px;
-    color: #999;
+    color: var(--text-color-20);
     margin-bottom: 10px;
 }
 
@@ -382,28 +382,28 @@ a:hover {
     margin: 20px auto;
     border: 0;
     height: 1px;
-    background: #ddd;
+    background: var(--text-color-10);
 }
 
 .author {
     font-size: 16px;
-    color: #666;
+    color: var(--text-color-60);
 }
 
 .copyright {
     font-size: 14px;
-    color: #999;
+    color: var(--text-color-20);
     margin-top: 10px;
 }
 
 .powered-by {
     font-size: 14px;
-    color: #999;
+    color: var(--text-color-20);
     margin-top: 10px;
 }
 
 .powered-by a {
-    color: #666;
+    color: var(--text-color-60);
 }
 
 .powered-by a:hover {
@@ -496,7 +496,7 @@ a:hover {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px var(--text-color-10);
 }
 
 /* 文章内容标题自动编号样式 */
